@@ -103,10 +103,14 @@ jobs:
           mirror -R ./ ${DEPLOY_TARGET_DIR} \
             --delete \
             --verbose \
-            --exclude-glob .git* \
+            --exclude-glob .git \
+            --exclude-glob .git/** \
             --exclude-glob .github \
-            --exclude-glob README.md \
-            --exclude-glob .DS_Store;
+            --exclude-glob .github/** \
+            --exclude-glob '*.md' \
+            --exclude-glob .DS_Store \
+            --exclude-glob .vercel \
+            --exclude-glob .vercel/**;
           bye"
 
       - name: Deploy with SFTP (password)
@@ -137,10 +141,14 @@ jobs:
           mirror -R ./ ${DEPLOY_TARGET_DIR} \
             --delete \
             --verbose \
-            --exclude-glob .git* \
+            --exclude-glob .git \
+            --exclude-glob .git/** \
             --exclude-glob .github \
-            --exclude-glob README.md \
-            --exclude-glob .DS_Store;
+            --exclude-glob .github/** \
+            --exclude-glob '*.md' \
+            --exclude-glob .DS_Store \
+            --exclude-glob .vercel \
+            --exclude-glob .vercel/**;
           bye"
 
       - name: Deploy with FTPS
@@ -162,8 +170,12 @@ jobs:
           mirror -R ./ ${DEPLOY_TARGET_DIR} \
             --delete \
             --verbose \
-            --exclude-glob .git* \
+            --exclude-glob .git \
+            --exclude-glob .git/** \
             --exclude-glob .github \
-            --exclude-glob README.md \
-            --exclude-glob .DS_Store;
+            --exclude-glob .github/** \
+            --exclude-glob '*.md' \
+            --exclude-glob .DS_Store \
+            --exclude-glob .vercel \
+            --exclude-glob .vercel/**;
           bye"
