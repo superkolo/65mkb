@@ -85,12 +85,9 @@ include 'header.php';
 
 <h2>Partnerzy / Sponsorzy / Media</h2>
 <div class="sponsors">
-<div class="sponsor">PWZBS</div>
-<div class="sponsor">Miasto Sopot</div>
-<div class="sponsor">Budimex GPPP</div>
-<div class="sponsor">Trefl S.A.</div>
-<div class="sponsor">Pracodawcy Pomorza</div>
-<div class="sponsor">Miasto Gdańsk</div>
+<div class="sponsor">Sponsor</div>
+<div class="sponsor">Sponsor</div>
+<div class="sponsor">Media</div>
 </div>
 
 </div>
