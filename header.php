@@ -19,10 +19,10 @@
     <a href="klasyfikacje.php">Klasyfikacje</a>
     <a href="sala.php">Sala gry</a>
     <a href="regulamin.php">Regulamin Kongresu</a>
-    <a href="gppt.php">Regulamin GPPT</a>
-    <a target="blank" href="https://www.facebook.com/pwzbs/photos">Zdjęcia</a>
+    <a href="gppt.php">GP Teamów</a>
+    <a target="_blank" href="https://www.facebook.com/pwzbs/photos">Zdjęcia</a>
     <a href="contact.php">Kontakt</a>
-    <a href="archiwum.php">ARCHIWUM</a>
+    <a href="archiwum.php">Archiwum</a>
   </nav>
 </header>
 

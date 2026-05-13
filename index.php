@@ -33,7 +33,7 @@ include 'header.php';
 <div class="schedule">
 
 <div class="day" id="day1">
-<h3>24.07.2025</h3>
+<h3>24.07.2026</h3>
 <div class="event ktp">10:00 <?php echo wynTC('I KTP* (3x10)','k1','',''); ?></div>
 <div class="event youth">10:15 <?php echo wynTC('Turniej Młodzieżowy - Indywiduel','y1','',''); ?></div>
 <div class="event ktp">17:00 <?php echo wynTC('II KTP* (3x10)','k2','',''); ?></div>
@@ -41,7 +41,7 @@ include 'header.php';
 </div>
 
 <div class="day" id="day2">
-<h3>25.07.2025</h3>
+<h3>25.07.2026</h3>
 <div class="event ktp">10:00 <?php echo wynTC('III KTP* (3x10)','k3','',''); ?></div>
 <div class="event youth">10:15 <?php echo wynTC('Turniej Młodzieżowy - Maksy','y3','',''); ?></div>
 <div class="event ktp">17:00 <?php echo wynTC('IV KTP**','k4','',''); ?></div>
@@ -49,18 +49,18 @@ include 'header.php';
 </div>
 
 <div class="day" id="day3">
-<h3>26.07.2025</h3>
+<h3>26.07.2026</h3>
 <div class="event gppp">10:00 <?php echo wynTC('V KTP*** - Budimex GPPP (5x10)','g1','',''); ?></div>
 </div>
 
 <div class="day" id="day4">
-<h3>27.07.2025</h3>
+<h3>27.07.2026</h3>
 <div class="event team">10:00 <?php echo wynTC('GP Teamów','t1','',''); ?></div>
 <div class="event amateur">17:15 <?php echo wynTC('II Turniej Amatorów - Teamy','a2','',''); ?></div>
 </div>
 
 <div class="day" id="day5">
-<h3>28.07.2025</h3>
+<h3>28.07.2026</h3>
 <div class="event team">10:00 <?php echo wynTC('GP Teamów – ćwierćfinały','t2','',''); ?></div>
 <div class="event ktp">10:00 <?php echo wynTC('VII KTP* (3x10)','k7','',''); ?></div>
 <div class="event team">16:15 <?php echo wynTC('GP Teamów – półfinały','t3','',''); ?></div>
@@ -69,7 +69,7 @@ include 'header.php';
 </div>
 
 <div class="day" id="day6">
-<h3>29.07.2025</h3>
+<h3>29.07.2026</h3>
 <div class="event team">09:30 <?php echo wynTC('GP Teamów - finał','t4','',''); ?></div>
 <div class="event ktp">10:00 <?php echo wynTC('IX KTP* (3x10)','k9','',''); ?></div>
 <div class="event ktp">17:00 <?php echo wynTC('X KTP** - miksty (3x10)','k10mxt','',''); ?></div>
@@ -78,16 +78,19 @@ include 'header.php';
 </div>
 
 <div class="day" id="day7">
-<h3>30.07.2025</h3>
+<h3>30.07.2026</h3>
 <div class="event ktp">10:00 <?php echo wynTC('XI KTP** (4x10)','k11','',''); ?></div>
 <div class="event">16:30 Ceremonia zakończenia Kongresu</div>
 </div></div>
 
 <h2>Partnerzy / Sponsorzy / Media</h2>
 <div class="sponsors">
-<div class="sponsor">Sponsor</div>
-<div class="sponsor">Sponsor</div>
-<div class="sponsor">Media</div>
+<div class="sponsor">PWZBS</div>
+<div class="sponsor">Miasto Sopot</div>
+<div class="sponsor">Budimex GPPP</div>
+<div class="sponsor">Trefl S.A.</div>
+<div class="sponsor">Pracodawcy Pomorza</div>
+<div class="sponsor">Miasto Gdańsk</div>
 </div>
 
 </div>
