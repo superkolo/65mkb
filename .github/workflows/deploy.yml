@@ -158,7 +158,7 @@ jobs:
           set ftp:ssl-force true;
           set ftp:ssl-protect-data true;
           set ftp:passive-mode true;
-          set ssl:verify-certificate true;
+          set ssl:verify-certificate false;
           mirror -R ./ ${DEPLOY_TARGET_DIR} \
             --delete \
             --verbose \
