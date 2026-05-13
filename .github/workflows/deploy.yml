@@ -149,7 +149,7 @@ jobs:
         run: |
           set -euo pipefail
           PORT="${DEPLOY_PORT:-21}"
-          lftp -u "${DEPLOY_USERNAME}","${DEPLOY_PASSWORD}" "ftps://${DEPLOY_HOST}:${PORT}" -e "
+          lftp -u "${DEPLOY_USERNAME}","${DEPLOY_PASSWORD}" "ftp://${DEPLOY_HOST}:${PORT}" -e "
           set cmd:fail-exit yes;
           set net:max-retries 2;
           set net:reconnect-interval-base 5;
@@ -157,6 +157,7 @@ jobs:
           set xfer:clobber on;
           set ftp:ssl-force true;
           set ftp:ssl-protect-data true;
+          set ftp:passive-mode true;
           set ssl:verify-certificate true;
           mirror -R ./ ${DEPLOY_TARGET_DIR} \
             --delete \
