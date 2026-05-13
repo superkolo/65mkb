@@ -34,52 +34,52 @@ include 'header.php';
 
 <div class="day" id="day1">
 <h3>24.07.2026</h3>
-<div class="event ktp">10:00 <?php echo wynTC('I KTP* o puchar Rektora Politechniki Gdańskiej (3x10)','k1','',''); ?></div>
-<div class="event youth">10:15 <?php echo wynTC('Turniej Młodzieżowy - Indywidualny','y1','',''); ?></div>
-<div class="event ktp">17:00 <?php echo wynTC('II KTP* o puchar Honorowego Prezesa PWZBS Andrzeja Zaleskiego (3x10)','k2','',''); ?></div>
-<div class="event youth">17:15 <?php echo wynTC('Turniej Młodzieżowy - Cavendish uśredniony','y2','',''); ?></div>
+<div class="event ktp">10:00 <?php echo wynTC('I KTP* (3x10)','k1','',''); ?></div>
+<div class="event youth">10:15 <?php echo wynTC('Turniej Młodzieżowy - Indywiduel','y1','',''); ?></div>
+<div class="event ktp">17:00 <?php echo wynTC('II KTP* (3x10)','k2','',''); ?></div>
+<div class="event youth">17:15 <?php echo wynTC('Turniej Młodzieżowy - Cav. uśr','y2','',''); ?></div>
 </div>
 
 <div class="day" id="day2">
 <h3>25.07.2026</h3>
-<div class="event ktp">10:00 <?php echo wynTC('III KTP* memoriał Krzysztofa “Generała” Eustachewicza (3x10)','k3','',''); ?></div>
+<div class="event ktp">10:00 <?php echo wynTC('III KTP* (3x10)','k3','',''); ?></div>
 <div class="event youth">10:15 <?php echo wynTC('Turniej Młodzieżowy - Maksy','y3','',''); ?></div>
-<div class="event ktp">17:00 <?php echo wynTC('IV KTP** o puchar Prezesa Trefl S.A.','k4','',''); ?></div>
-<div class="event amateur">17:15 <?php echo wynTC('I Turniej Par Amatorów o Puchar Wczasów Brydżowych Krzysztofa Ziewacza','a1','',''); ?></div>
+<div class="event ktp">17:00 <?php echo wynTC('IV KTP**','k4','',''); ?></div>
+<div class="event amateur">17:15 <?php echo wynTC('I Turniej Par Amatorów','a1','',''); ?></div>
 </div>
 
 <div class="day" id="day3">
 <h3>26.07.2026</h3>
-<div class="event gppp">10:00 <?php echo wynTC('V KTP*** - Budimex GPPP o puchar Prezydentki Miasta Sopotu (5x10)','g1','',''); ?></div>
+<div class="event gppp">10:00 <?php echo wynTC('V KTP*** - Budimex GPPP (5x10)','g1','',''); ?></div>
 </div>
 
 <div class="day" id="day4">
 <h3>27.07.2026</h3>
-<div class="event team">10:00 <?php echo wynTC('Mistrzostwa / GP Teamów - eliminacje','t1','',''); ?></div>
-<div class="event amateur">17:15 <?php echo wynTC('II Turniej Amatorów - Teamy o Puchar Wczasów Brydżowych Krzysztofa Ziewacza','a2','',''); ?></div>
+<div class="event team">10:00 <?php echo wynTC('GP Teamów','t1','',''); ?></div>
+<div class="event amateur">17:15 <?php echo wynTC('II Turniej Amatorów - Teamy','a2','',''); ?></div>
 </div>
 
 <div class="day" id="day5">
 <h3>28.07.2026</h3>
-<div class="event team">10:00 <?php echo wynTC('Mistrzostwa / GP Teamów – ćwierćfinały','t2','',''); ?></div>
-<div class="event ktp">10:00 <?php echo wynTC('VII KTP* o puchar Sympatyków Brydża ze Sztumu (3x10)','k7','',''); ?></div>
-<div class="event team">16:15 <?php echo wynTC('Mistrzostwa / GP Teamów – półfinały','t3','',''); ?></div>
-<div class="event ktp">17:00 <?php echo wynTC('VIII KTP* o puchar Prezesa Darles-Santerm Leszka Szkudlarka - cav. uśr. (3x10)','k8','',''); ?></div>
-<div class="event amateur">17:15 <?php echo wynTC('III Turniej Par Amatorów o Puchar Wczasów Brydżowych Krzysztofa Ziewacza - cav. uśr.','a3','',''); ?></div>
+<div class="event team">10:00 <?php echo wynTC('GP Teamów – ćwierćfinały','t2','',''); ?></div>
+<div class="event ktp">10:00 <?php echo wynTC('VII KTP* (3x10)','k7','',''); ?></div>
+<div class="event team">16:15 <?php echo wynTC('GP Teamów – półfinały','t3','',''); ?></div>
+<div class="event ktp">17:00 <?php echo wynTC('VIII KTP* - cav. uśr. (3x10)','k8','',''); ?></div>
+<div class="event amateur">17:15 <?php echo wynTC('III Turniej Par Amatorów - cav. uśr.','a3','',''); ?></div>
 </div>
 
 <div class="day" id="day6">
 <h3>29.07.2026</h3>
-<div class="event team">09:30 <?php echo wynTC('Mistrzostwa / GP Teamów - finał i mecz o 3. miejsce','t4','',''); ?></div>
-<div class="event ktp">10:00 <?php echo wynTC('IX KTP* o puchar Prezesa PWZBS Andrzeja Twardowskiego (3x10)','k9','',''); ?></div>
-<div class="event ktp">17:00 <?php echo wynTC('X KTP** - miksty o puchar Zarządu Pomorskiej Specjalnej Strefy Ekonomicznej (3x10)','k10mxt','',''); ?></div>
-<div class="event ktp">17:00 <?php echo wynTC('X KTP* - obok mikstów o puchar Okna Boniek (3x10)','k10','',''); ?></div>
-<div class="event amateur">17:15 <?php echo wynTC('IV Turniej Par Amatorów o Puchar Wczasów Brydżowych Krzysztofa Ziewacza','a4','',''); ?></div>
+<div class="event team">09:30 <?php echo wynTC('GP Teamów - finał','t4','',''); ?></div>
+<div class="event ktp">10:00 <?php echo wynTC('IX KTP* (3x10)','k9','',''); ?></div>
+<div class="event ktp">17:00 <?php echo wynTC('X KTP** - miksty (3x10)','k10mxt','',''); ?></div>
+<div class="event ktp">17:00 <?php echo wynTC('X KTP* (3x10)','k10','',''); ?></div>
+<div class="event amateur">17:15 <?php echo wynTC('IV Turniej Par Amatorów','a4','',''); ?></div>
 </div>
 
 <div class="day" id="day7">
 <h3>30.07.2026</h3>
-<div class="event ktp">10:00 <?php echo wynTC('XI KTP** o puchary Prezesa MAG Michała Śmigielskiego pamięci Zygmunta Śmigielskiego (4x10 bez przerwy)','k11','',''); ?></div>
+<div class="event ktp">10:00 <?php echo wynTC('XI KTP** (4x10)','k11','',''); ?></div>
 <div class="event">16:30 Ceremonia zakończenia Kongresu</div>
 </div></div>
 
