@@ -1,0 +1,168 @@
+name: Deploy to server
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: production-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    permissions:
+      contents: read
+    env:
+      DEPLOY_PROTOCOL: ${{ secrets.DEPLOY_PROTOCOL }}
+      DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+      DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
+      DEPLOY_USERNAME: ${{ secrets.DEPLOY_USERNAME }}
+      DEPLOY_PASSWORD: ${{ secrets.DEPLOY_PASSWORD }}
+      DEPLOY_TARGET_DIR: ${{ secrets.DEPLOY_TARGET_DIR }}
+      DEPLOY_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
+      DEPLOY_HOST_KEY: ${{ secrets.DEPLOY_HOST_KEY }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate secrets
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          for name in DEPLOY_PROTOCOL DEPLOY_HOST DEPLOY_USERNAME DEPLOY_TARGET_DIR; do
+            if [ -z "${!name:-}" ]; then
+              echo "Missing required secret: $name" >&2
+              exit 1
+            fi
+          done
+
+          case "${DEPLOY_PROTOCOL}" in
+            sftp|ftps) ;;
+            *)
+              echo "DEPLOY_PROTOCOL must be sftp or ftps" >&2
+              exit 1
+              ;;
+          esac
+
+          if [ "${DEPLOY_PROTOCOL}" = "sftp" ]; then
+            if [ -z "${DEPLOY_PRIVATE_KEY:-}" ] && [ -z "${DEPLOY_PASSWORD:-}" ]; then
+              echo "For sftp set DEPLOY_PRIVATE_KEY or DEPLOY_PASSWORD" >&2
+              exit 1
+            fi
+          fi
+
+          if [ "${DEPLOY_PROTOCOL}" = "ftps" ] && [ -z "${DEPLOY_PASSWORD:-}" ]; then
+            echo "For ftps set DEPLOY_PASSWORD" >&2
+            exit 1
+          fi
+
+      - name: Install deploy tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y lftp openssh-client sshpass
+
+      - name: Configure SSH key
+        if: ${{ env.DEPLOY_PROTOCOL == 'sftp' && env.DEPLOY_PRIVATE_KEY != '' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          printf '%s\n' "$DEPLOY_PRIVATE_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          if [ -n "${DEPLOY_HOST_KEY:-}" ]; then
+            printf '%s\n' "$DEPLOY_HOST_KEY" >> ~/.ssh/known_hosts
+            chmod 600 ~/.ssh/known_hosts
+          fi
+
+      - name: Deploy with SFTP (SSH key)
+        if: ${{ env.DEPLOY_PROTOCOL == 'sftp' && env.DEPLOY_PRIVATE_KEY != '' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          PORT="${DEPLOY_PORT:-22}"
+          HOST_KEY_CHECKING="accept-new"
+          if [ -n "${DEPLOY_HOST_KEY:-}" ]; then
+            HOST_KEY_CHECKING="yes"
+          fi
+
+          lftp -c "
+          set cmd:fail-exit yes;
+          set net:max-retries 2;
+          set net:reconnect-interval-base 5;
+          set net:timeout 20;
+          set xfer:clobber on;
+          set sftp:auto-confirm no;
+          set sftp:connect-program \"ssh -a -x -i ~/.ssh/deploy_key -o StrictHostKeyChecking=${HOST_KEY_CHECKING}\";
+          open -u ${DEPLOY_USERNAME}, sftp://${DEPLOY_HOST}:${PORT};
+          mirror -R ./ ${DEPLOY_TARGET_DIR} \
+            --delete \
+            --verbose \
+            --exclude-glob .git* \
+            --exclude-glob .github \
+            --exclude-glob README.md \
+            --exclude-glob .DS_Store;
+          bye"
+
+      - name: Deploy with SFTP (password)
+        if: ${{ env.DEPLOY_PROTOCOL == 'sftp' && env.DEPLOY_PRIVATE_KEY == '' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          PORT="${DEPLOY_PORT:-22}"
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          if [ -n "${DEPLOY_HOST_KEY:-}" ]; then
+            printf '%s\n' "$DEPLOY_HOST_KEY" >> ~/.ssh/known_hosts
+            chmod 600 ~/.ssh/known_hosts
+            HOST_KEY_CHECKING="yes"
+          else
+            HOST_KEY_CHECKING="accept-new"
+          fi
+
+          lftp -c "
+          set cmd:fail-exit yes;
+          set net:max-retries 2;
+          set net:reconnect-interval-base 5;
+          set net:timeout 20;
+          set xfer:clobber on;
+          set sftp:auto-confirm no;
+          set sftp:connect-program \"sshpass -p ${DEPLOY_PASSWORD} ssh -a -x -o StrictHostKeyChecking=${HOST_KEY_CHECKING}\";
+          open -u ${DEPLOY_USERNAME}, sftp://${DEPLOY_HOST}:${PORT};
+          mirror -R ./ ${DEPLOY_TARGET_DIR} \
+            --delete \
+            --verbose \
+            --exclude-glob .git* \
+            --exclude-glob .github \
+            --exclude-glob README.md \
+            --exclude-glob .DS_Store;
+          bye"
+
+      - name: Deploy with FTPS
+        if: ${{ env.DEPLOY_PROTOCOL == 'ftps' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          PORT="${DEPLOY_PORT:-21}"
+          lftp -u "${DEPLOY_USERNAME}","${DEPLOY_PASSWORD}" "ftps://${DEPLOY_HOST}:${PORT}" -e "
+          set cmd:fail-exit yes;
+          set net:max-retries 2;
+          set net:reconnect-interval-base 5;
+          set net:timeout 20;
+          set xfer:clobber on;
+          set ftp:ssl-force true;
+          set ftp:ssl-protect-data true;
+          set ssl:verify-certificate true;
+          mirror -R ./ ${DEPLOY_TARGET_DIR} \
+            --delete \
+            --verbose \
+            --exclude-glob .git* \
+            --exclude-glob .github \
+            --exclude-glob README.md \
+            --exclude-glob .DS_Store;
+          bye"
