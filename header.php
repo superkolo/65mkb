@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?php echo $title; ?> - 65. Międzynarodowy Kongres Bałtycki</title>
-<link rel="stylesheet" href="style.css?t=1222222222">
+<link rel="stylesheet" href="style.css?t=<?php echo filemtime(__DIR__ . '/style.css'); ?>">
 </head>
 <body>
 
