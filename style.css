@@ -572,5 +572,134 @@ h2 {color:var(--primary);}
   }
 }
 
+.archive {
+  color:#00315f;
+  max-width:1050px;
+  margin:0 auto;
+}
+
+.archive__hero {
+  background:linear-gradient(135deg,rgba(255,255,255,0.96),rgba(232,248,248,0.94));
+  border-radius:8px;
+  box-shadow:0 10px 30px rgba(0,49,95,0.12);
+  margin-bottom:24px;
+  overflow:hidden;
+  padding:34px;
+  position:relative;
+}
+
+.archive__hero::after {
+  content:"";
+  position:absolute;
+  right:-70px;
+  top:-70px;
+  width:220px;
+  height:220px;
+  border:28px solid rgba(29,161,161,0.18);
+  border-radius:50%;
+}
+
+.archive__eyebrow {
+  color:var(--secondary);
+  font-weight:700;
+  letter-spacing:1px;
+  margin:0 0 8px;
+  text-transform:uppercase;
+}
+
+.archive h2 {
+  color:var(--primary);
+  font-size:44px;
+  line-height:1.1;
+  margin:0 0 12px;
+}
+
+.archive__hero p:last-child {
+  font-size:18px;
+  line-height:1.55;
+  max-width:680px;
+  margin:0;
+}
+
+.archive__grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+}
+
+.archive-card {
+  background:#ffffffcc;
+  border-left:6px solid var(--primary);
+  border-radius:8px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.06);
+  color:#00315f;
+  display:flex;
+  flex-direction:column;
+  min-height:190px;
+  padding:20px;
+  text-decoration:none;
+  transition:0.2s;
+}
+
+.archive-card:hover {
+  box-shadow:0 10px 22px rgba(0,49,95,0.14);
+  transform:translateY(-2px);
+}
+
+.archive-card--featured {
+  background:linear-gradient(160deg,var(--primary),var(--secondary));
+  border-left-color:#ffd947;
+  color:white;
+  grid-column:span 2;
+}
+
+.archive-card__year {
+  font-size:34px;
+  font-weight:700;
+  line-height:1;
+  margin-bottom:14px;
+}
+
+.archive-card strong {
+  font-size:20px;
+  line-height:1.25;
+  margin-bottom:10px;
+}
+
+.archive-card span:not(.archive-card__year) {
+  line-height:1.45;
+}
+
+.archive-card em {
+  font-style:normal;
+  font-weight:700;
+  margin-top:auto;
+  padding-top:18px;
+}
+
+@media(max-width:900px){
+  .archive__grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(max-width:600px){
+  .archive h2 {
+    font-size:34px;
+  }
+
+  .archive__hero {
+    padding:24px;
+  }
+
+  .archive__grid {
+    grid-template-columns:1fr;
+  }
+
+  .archive-card--featured {
+    grid-column:auto;
+  }
+}
+
 .footer {background:var(--primary);color:white;text-align:center;padding:20px;margin-top:40px;}
 
