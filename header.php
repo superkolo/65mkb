@@ -13,7 +13,7 @@
   <div class="menu-toggle" onclick="toggleMenu()">☰</div>
   <nav id="menu">
     <a href="./">Strona Główna</a>
-    <a target="_blank" href="https://bridge.gda.pl/64mkb-szukam-partnera/">Szukam partnera</a>
+    <a target="_blank" href="https://bridge.gda.pl/65mkb-szukam-partnera/">Szukam partnera</a>
     <a href="wpisowe.php">Wpisowe</a>
     <a href="nagrody.php">Nagrody</a>
     <a href="klasyfikacje.php">Klasyfikacje</a>
