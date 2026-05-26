@@ -83,12 +83,42 @@ include 'header.php';
 <div class="event">16:30 Ceremonia zakończenia Kongresu</div>
 </div></div>
 
-<h2>Partnerzy / Sponsorzy / Media</h2>
-<div class="sponsors">
-<div class="sponsor">Sponsor</div>
-<div class="sponsor">Sponsor</div>
-<div class="sponsor">Media</div>
-</div>
+<section class="partners">
+  <h2>Partnerzy / Sponsorzy / Media</h2>
+
+  <div class="partners__groups">
+    <section class="partners__group">
+      <h3>Partnerzy</h3>
+      <div class="partners__logos">
+        <div class="sponsor sponsor--partner">
+          <img src="partner-herb.png" alt="Partner Kongresu">
+        </div>
+        <div class="sponsor sponsor--partner sponsor--wt">
+          <img src="partner-wt-logo.png" alt="Wioleta Tomczak - Posłanka na Sejm RP">
+        </div>
+      </div>
+    </section>
+
+    <section class="partners__group">
+      <h3>Sponsorzy</h3>
+      <div class="partners__logos">
+        <div class="sponsor sponsor--gdansk">
+          <img src="gdansk-logo.png" alt="Gdańsk">
+          <span>Dofinansowano ze środków Miasta Gdańska</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners__group">
+      <h3>Media</h3>
+      <div class="partners__logos">
+        <div class="sponsor sponsor--media">
+          <img src="radio-gdansk-logo.jpg" alt="Radio Gdańsk">
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
 
 </div>
 

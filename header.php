@@ -9,7 +9,7 @@
 <body>
 
 <header>
-  <img src="mkb-gpt.png?t=" alt="Logo">
+  <img src="mkb-logo.svg" alt="65. Międzynarodowy Kongres Bałtycki">
   <div class="menu-toggle" onclick="toggleMenu()">☰</div>
   <nav id="menu">
     <a href="./">Strona Główna</a>
