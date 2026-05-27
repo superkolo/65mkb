@@ -45,7 +45,7 @@ include 'header.php';
 
   <section class="prizes__section">
     <p>W turnieju Grand Prix Polski Par nagrody przyznaje się jak za turnieje kongresowe z tym, że pula nagród jest wyliczana zgodnie z regulaminem GPPP.</p>
-    <p>W Mistrzostwach Polski Teamów przyznaje się minimum 3 nagrody, które otrzymuje nie mniej niż 7% teamów. Liczba i wysokość nagród zostaną ogłoszone po starcie turnieju.</p>
+    <p>W Grand Prix Polski Teamów przyznaje się minimum 3 nagrody, które otrzymuje nie mniej niż 7% teamów. Liczba i wysokość nagród zostaną ogłoszone po starcie turnieju.</p>
   </section>
 
   <section class="prizes__section">
@@ -92,7 +92,7 @@ include 'header.php';
 
   <section class="prizes__section">
     <p>Nagrody główne długofalowe i nagrody dodatkowe przyznawane są graczom, którzy zagrali min. 50% turniejów kongresowych dla Klasyfikacji Kongresowej.</p>
-    <p>W przypadku miejsc dzielonych decyduje wyższy wynik uzyskany w turniejach według kolejności: MPT, GPPP, par 4x10. W przypadku uzyskania takich samych lokat dla graczy w danej kategorii, we wszystkich wymienionych wyżej turniejach zawodnicy zajmują miejsce ex aequo, a nagrody ulegają równemu podziałowi.</p>
+    <p>W przypadku miejsc dzielonych decyduje wyższy wynik uzyskany w turniejach według kolejności: GPPT, GPPP, par 4x10. W przypadku uzyskania takich samych lokat dla graczy w danej kategorii, we wszystkich wymienionych wyżej turniejach zawodnicy zajmują miejsce ex aequo, a nagrody ulegają równemu podziałowi.</p>
     <p>Nagrody dodatkowe w kongresowej punktacji długofalowej kumulują się z nagrodami głównymi, ale nie kumulują się ze sobą; innymi słowy, jeden zawodnik nie może otrzymać dwóch nagród specjalnych w kongresowej punktacji długofalowej, ale może otrzymać nagrodę główną i nagrodę specjalną. W przypadku takiej kumulacji, zawodnik otrzymuje nagrodę zgodną z podaną kolejnością w pkt. 6.b. Na przykład junior wygrywający punktację juniorską oraz kobiet otrzymuje nagrodę jako junior, a nagrodę kobiecą otrzymuje kobieta zajmująca 2. miejsce wśród kobiet itd.</p>
   </section>
 </section>

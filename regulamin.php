@@ -14,7 +14,7 @@ include 'header.php';
       <li>Zawody mają charakter otwarty - z wyjątkami:
         <ul>
           <li>w turniejach nie mogą brać udziału zawodnicy zagraniczni z Rosji i Białorusi, którzy nie są zrzeszeni w PZBS,</li>
-          <li>w turniejach GPPP, MPT mogą uczestniczyć wyłącznie zawodnicy zrzeszeni (opłacona aktualna składka PZBS) lub zawodnicy zagraniczni zrzeszeni w macierzystym związku brydża sportowego, który jest członkiem WBF,</li>
+          <li>w turniejach GPPP, GPPT mogą uczestniczyć wyłącznie zawodnicy zrzeszeni (opłacona aktualna składka PZBS) lub zawodnicy zagraniczni zrzeszeni w macierzystym związku brydża sportowego, który jest członkiem WBF,</li>
           <li>w Turnieju Amatorów mogą uczestniczyć zawodnicy niezrzeszeni w PZBS lub zawodnicy PZBS do 1.5 WK. W szczególnych przypadkach sędzia główny może dopuścić zawodnika o wyższym WK lub nie dopuścić osoby niezrzeszonej.</li>
         </ul>
       </li>
@@ -50,11 +50,11 @@ include 'header.php';
           <li>w turnieju GPPP - 450 pdf,</li>
           <li>w turniejach par, oprócz XI turnieju par - 300 pdf,</li>
           <li>w XI turnieju par - 400 pdf,</li>
-          <li>w eliminacjach MPT - 400 pdf,</li>
+          <li>w eliminacjach GPPT - 400 pdf,</li>
           <li>w turniejach Amatorów - 100 pdf.</li>
         </ul>
       </li>
-      <li>Ponadto zawodnicy uczestniczący w fazie play-off MPT otrzymują PDFy jako osobne turnieje:
+      <li>Ponadto zawodnicy uczestniczący w fazie play-off GPPT otrzymują PDFy jako osobne turnieje:
         <ul>
           <li>w ćwierćfinałach: wygrani 264, przegrani 198,</li>
           <li>w klasyfikacji końcowej za miejsca I - 600, II - 520, III - 440, IV - 360.</li>
@@ -70,7 +70,7 @@ include 'header.php';
           <li>w turniejach amatorów: 5, 3, 1.</li>
         </ul>
       </li>
-      <li>W przypadku takiej samej liczby pdf decyduje wyższy wynik uzyskany w turniejach według kolejności: MPT, GPPP, par 4x10. W przypadku uzyskania takich samych lokat we wszystkich wymienionych wyżej turniejach zawodnicy zajmują miejsce ex aequo, a nagrody ulegają podziałowi. W turniejach Amatorów w przypadku takiej samej liczby pdf decyduje wyższy wynik uzyskany w turniejach wg kolejności: turniej teamów, turnieje par poczynając od najliczniej obsadzonych, w przypadku równych liczb uczestników wcześniejszy jest o wyższym numerze (rozgrywany później).</li>
+      <li>W przypadku takiej samej liczby pdf decyduje wyższy wynik uzyskany w turniejach według kolejności: GPPT, GPPP, par 4x10. W przypadku uzyskania takich samych lokat we wszystkich wymienionych wyżej turniejach zawodnicy zajmują miejsce ex aequo, a nagrody ulegają podziałowi. W turniejach Amatorów w przypadku takiej samej liczby pdf decyduje wyższy wynik uzyskany w turniejach wg kolejności: turniej teamów, turnieje par poczynając od najliczniej obsadzonych, w przypadku równych liczb uczestników wcześniejszy jest o wyższym numerze (rozgrywany później).</li>
     </ol>
   </section>
 

@@ -27,10 +27,10 @@ include 'header.php';
           <td>-</td>
         </tr>
         <tr>
-          <td><span class="fee-dot fee-dot--red"></span>MPT - eliminacje<sup>3</sup></td>
-          <td>160 zł</td>
+          <td><span class="fee-dot fee-dot--red"></span>GPPT - eliminacje<sup>3</sup></td>
+          <td>140 zł</td>
           <td>100 zł</td>
-          <td>60 zł</td>
+          <td>50 zł</td>
           <td>-</td>
         </tr>
         <tr>
@@ -49,10 +49,10 @@ include 'header.php';
         </tr>
         <tr>
           <td><span class="fee-dot fee-dot--yellow"></span>Turniej Amatorów<sup>4</sup></td>
-          <td>10 zł</td>
-          <td>10 zł</td>
-          <td>10 zł</td>
-          <td>10 zł</td>
+          <td>20 zł</td>
+          <td>20 zł</td>
+          <td>20 zł</td>
+          <td>20 zł</td>
         </tr>
       </tbody>
     </table>
@@ -60,7 +60,7 @@ include 'header.php';
 
   <ol class="entry-fees__notes">
     <li>Dla osób z opłaconą bieżącą składką PZBS oraz młodzieży zagranicznej. Nie dotyczy turniejów amatorskich.</li>
-    <li>W turniejach z cyklu GPPP oraz w MPT prawo startu mają wyłącznie zawodnicy z opłaconą bieżącą składką PZBS oraz zawodnicy zagraniczni z opłaconą składką w zagranicznej federacji.</li>
+    <li>W turniejach z cyklu GPPP oraz GPPT prawo startu mają wyłącznie zawodnicy z opłaconą bieżącą składką PZBS oraz zawodnicy zagraniczni z opłaconą składką w zagranicznej federacji.</li>
     <li>Za każdą kolejną fazę 50 zł niezależnie od kategorii.</li>
     <li>Uprawnieni do udziału w turnieju są amatorzy, tzn. gracze niezrzeszeni w PZBS lub zrzeszeni w PZBS o WK nie przekraczającym 1.5.</li>
     <li>Nagrody będą wypłacane przelewem.</li>
