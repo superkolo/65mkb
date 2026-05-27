@@ -77,6 +77,36 @@ nav a:hover {
   color:var(--primary-dark);
 }
 
+.language-switch {
+  align-items:center;
+  border:1px solid var(--line);
+  border-radius:999px;
+  display:flex;
+  flex:0 0 auto;
+  font-size:14px;
+  font-weight:700;
+  gap:4px;
+  padding:4px;
+}
+
+.language-switch a,
+.language-switch span {
+  border-radius:999px;
+  color:var(--ink);
+  line-height:1;
+  padding:7px 9px;
+  text-decoration:none;
+}
+
+.language-switch a:hover {
+  color:var(--primary-dark);
+}
+
+.language-switch .active {
+  background:var(--accent);
+  color:white;
+}
+
 .container {
   flex:1;
   max-width:1180px;
@@ -804,6 +834,10 @@ h3 {
     position:absolute;
     right:20px;
     top:22px;
+  }
+
+  .language-switch {
+    margin-top:8px;
   }
 
   h1 {

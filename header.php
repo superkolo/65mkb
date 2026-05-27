@@ -1,3 +1,7 @@
+<?php
+$currentPage = basename($_SERVER['SCRIPT_NAME'] ?? 'index.php');
+$englishHref = ($currentPage === 'index.php') ? 'en/' : 'en/' . $currentPage;
+?>
 <!DOCTYPE html>
 <html lang="pl" >
 <head>
@@ -24,6 +28,10 @@
     <a href="contact.php">Kontakt</a>
     <a href="archiwum.php">ARCHIWUM</a>
   </nav>
+  <div class="language-switch" aria-label="Wybór języka">
+    <span class="active">PL</span>
+    <a href="<?php echo htmlspecialchars($englishHref, ENT_QUOTES); ?>">EN</a>
+  </div>
 </header>
 
 <div class="container">
