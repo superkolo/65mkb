@@ -141,6 +141,11 @@ include 'header.php';
           </a>
         </div>
         <div class="sponsor sponsor--partner">
+          <a href="https://gdyniasport.pl/" target="_blank" rel="noopener">
+            <img src="sponsor-gdynia-sport.svg" alt="Gdyńskie Centrum Sportu">
+          </a>
+        </div>
+        <div class="sponsor sponsor--partner">
           <a href="http://www.darles.pl/" target="_blank" rel="noopener">
             <img src="sponsor-darles-santerm.gif" alt="Darles-Santerm">
           </a>
