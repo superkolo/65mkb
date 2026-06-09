@@ -146,6 +146,16 @@ include 'header.php';
           </a>
         </div>
         <div class="sponsor sponsor--partner">
+          <a href="https://www.wczasybrydzowe.pl/" target="_blank" rel="noopener">
+            <img src="sponsor-wczasy-brydzowe.png" alt="Wczasy Brydżowe">
+          </a>
+        </div>
+        <div class="sponsor sponsor--wide">
+          <a href="https://wakacyjnepomysly.pl/" target="_blank" rel="noopener">
+            <img src="sponsor-wakacyjnepomysly.svg" alt="wakacyjnepomysly.pl">
+          </a>
+        </div>
+        <div class="sponsor sponsor--partner">
           <a href="http://www.darles.pl/" target="_blank" rel="noopener">
             <img src="sponsor-darles-santerm.gif" alt="Darles-Santerm">
           </a>

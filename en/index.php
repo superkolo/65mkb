@@ -122,6 +122,8 @@ include __DIR__ . '/header.php';
         <div class="sponsor sponsor--partner sponsor--trefl"><a href="https://trefl.com/" target="_blank" rel="noopener"><img src="../sponsor-trefl.svg" alt="Trefl S.A."></a></div>
         <div class="sponsor sponsor--wide"><a href="https://www.strefa.gda.pl/" target="_blank" rel="noopener"><img src="../sponsor-psse.png" alt="Pomeranian Special Economic Zone"></a></div>
         <div class="sponsor sponsor--partner"><a href="https://gdyniasport.pl/" target="_blank" rel="noopener"><img src="../sponsor-gdynia-sport.svg" alt="Gdynia Sports Centre"></a></div>
+        <div class="sponsor sponsor--partner"><a href="https://www.wczasybrydzowe.pl/" target="_blank" rel="noopener"><img src="../sponsor-wczasy-brydzowe.png" alt="Wczasy Brydżowe"></a></div>
+        <div class="sponsor sponsor--wide"><a href="https://wakacyjnepomysly.pl/" target="_blank" rel="noopener"><img src="../sponsor-wakacyjnepomysly.svg" alt="wakacyjnepomysly.pl"></a></div>
         <div class="sponsor sponsor--partner"><a href="http://www.darles.pl/" target="_blank" rel="noopener"><img src="../sponsor-darles-santerm.gif" alt="Darles-Santerm"></a></div>
         <div class="sponsor sponsor--gdansk">
           <a href="https://www.gdansk.pl/" target="_blank" rel="noopener">
