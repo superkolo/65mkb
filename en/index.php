@@ -15,9 +15,12 @@ include __DIR__ . '/header.php';
   <button onclick="filterEvents(event,'amateur')">Amateur</button>
   <button onclick="filterEvents(event,'gppp')">GPPP</button>
   <button onclick="filterEvents(event,'team')">GPPT</button>
+  <button onclick="filterEvents(event,'special')">Special</button>
 </div>
 
 <div class="days">
+  <button onclick="scrollToDay('day0')">22 Jul</button>
+  <button onclick="scrollToDay('day00')">23 Jul</button>
   <button onclick="scrollToDay('day1')">Fri</button>
   <button onclick="scrollToDay('day2')">Sat</button>
   <button onclick="scrollToDay('day3')">Sun</button>
@@ -29,6 +32,27 @@ include __DIR__ . '/header.php';
 </div>
 
 <div class="schedule">
+<div class="day day--record" id="day0">
+<h3>22.07.2026</h3>
+<div class="event special event--record">
+  <span class="event__badge">World record</span>
+  <strong>10:00 World record attempt</strong>
+  <span>The largest number of boards played during a 48-hour bridge match.</span>
+  <em>Venue: in front of the entrance to the Sopot Pier.</em>
+</div>
+</div>
+
+<div class="day day--festival" id="day00">
+<h3>23.07.2026</h3>
+<div class="event special event--festival">
+  <span class="event__badge">Youth festival</span>
+  <strong>Gdynia Youth Bridge Festival</strong>
+  <span>A youth bridge event preceding the main Congress programme.</span>
+  <em>Venue: Playing Card Museum “Ulica Brydżowa”.</em>
+  <a class="event__cta" href="https://gybf.pl/" target="_blank" rel="noopener">gybf.pl</a>
+</div>
+</div>
+
 <div class="day" id="day1">
 <h3>24.07.2026</h3>
 <div class="event ktp">10:00 <?php echo wynTC('I Congress Pairs Tournament* for the Cup of the Rector of Gdańsk University of Technology (3x10)','k1','',''); ?></div>
@@ -111,6 +135,7 @@ include __DIR__ . '/header.php';
       <h3>Partners</h3>
       <div class="partners__logos">
         <div class="sponsor sponsor--partner"><a href="https://pg.edu.pl/" target="_blank" rel="noopener"><img src="../partner-pg-logo.svg" alt="Gdańsk University of Technology"></a></div>
+        <div class="sponsor sponsor--wide"><a href="https://fundacja.trefl.com/muzeum-kart/" target="_blank" rel="noopener"><img src="../partner-muzeum-kart-logo.svg" alt="Playing Card Museum Ulica Brydżowa"></a></div>
         <div class="sponsor sponsor--wide"><a href="https://www.posnet.com.pl/" target="_blank" rel="noopener"><img src="../partner-posnet-logo.png" alt="POSNET"></a></div>
         <div class="sponsor sponsor--wide"><a href="https://iiyama.com/" target="_blank" rel="noopener"><img src="../partner-iiyama-logo.svg" alt="iiyama"></a></div>
       </div>

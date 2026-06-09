@@ -16,9 +16,12 @@ include 'header.php';
   <button onclick="filterEvents(event,'amateur')">Amator.</button>
   <button onclick="filterEvents(event,'gppp')">GPPP</button>
   <button onclick="filterEvents(event,'team')">GPPT</button>
+  <button onclick="filterEvents(event,'special')">Specjalne</button>
 </div>
 
 <div class="days">
+  <button onclick="scrollToDay('day0')">22.07</button>
+  <button onclick="scrollToDay('day00')">23.07</button>
   <button onclick="scrollToDay('day1')">pt</button>
   <button onclick="scrollToDay('day2')">sb</button>
   <button onclick="scrollToDay('day3')">nd</button>
@@ -31,6 +34,27 @@ include 'header.php';
 </div>
 
 <div class="schedule">
+
+<div class="day day--record" id="day0">
+<h3>22.07.2026</h3>
+<div class="event special event--record">
+  <span class="event__badge">Rekord świata</span>
+  <strong>10:00 Próba pobicia rekordu świata</strong>
+  <span>Największa liczba rozdań rozegrana w trakcie 48-godzinnego meczu brydżowego.</span>
+  <em>Miejsce: przed wejściem na sopockie molo.</em>
+</div>
+</div>
+
+<div class="day day--festival" id="day00">
+<h3>23.07.2026</h3>
+<div class="event special event--festival">
+  <span class="event__badge">Festiwal młodzieżowy</span>
+  <strong>Gdynia Youth Bridge Festival</strong>
+  <span>Wydarzenie młodzieżowe poprzedzające program kongresowy.</span>
+  <em>Miejsce: Muzeum Kart do Gry „Ulica Brydżowa”.</em>
+  <a class="event__cta" href="https://gybf.pl/" target="_blank" rel="noopener">gybf.pl</a>
+</div>
+</div>
 
 <div class="day" id="day1">
 <h3>24.07.2026</h3>
@@ -136,6 +160,11 @@ include 'header.php';
         <div class="sponsor sponsor--partner">
           <a href="https://pg.edu.pl/" target="_blank" rel="noopener">
             <img src="partner-pg-logo.svg" alt="Politechnika Gdańska">
+          </a>
+        </div>
+        <div class="sponsor sponsor--wide">
+          <a href="https://fundacja.trefl.com/muzeum-kart/" target="_blank" rel="noopener">
+            <img src="partner-muzeum-kart-logo.svg" alt="Muzeum Kart do Gry Ulica Brydżowa">
           </a>
         </div>
         <div class="sponsor sponsor--wide">
