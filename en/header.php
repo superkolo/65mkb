@@ -22,6 +22,7 @@ $polishHref = ($currentPage === 'index.php') ? '../' : '../' . $currentPage;
     <a href="nagrody.php">Prizes</a>
     <a href="klasyfikacje.php">Standings</a>
     <a href="sala.php">Venue</a>
+    <a href="noclegi.php">Accommodation</a>
     <a href="regulamin.php">Congress Rules</a>
     <a href="gppt.php">GPPT Rules</a>
     <a target="blank" href="https://www.facebook.com/pwzbs/photos">Photos</a>

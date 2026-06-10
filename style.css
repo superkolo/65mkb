@@ -468,6 +468,7 @@ h3 {
 .entry-fees,
 .prizes,
 .venue,
+.accommodation,
 .rules,
 .archive {
   color:var(--ink);
@@ -480,6 +481,7 @@ h3 {
 }
 
 .venue,
+.accommodation,
 .archive {
   max-width:1050px;
 }
@@ -493,6 +495,7 @@ h3 {
 .entry-fees h2,
 .prizes h2,
 .venue h2,
+.accommodation h2,
 .rules h2,
 .archive h2 {
   color:var(--ink);
@@ -665,6 +668,7 @@ h3 {
 }
 
 .venue__hero,
+.accommodation__hero,
 .archive__hero {
   background:var(--paper);
   border:1px solid var(--line);
@@ -680,12 +684,21 @@ h3 {
   align-items:stretch;
 }
 
+.accommodation__hero {
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 300px;
+  gap:0;
+  align-items:stretch;
+}
+
 .venue__content,
+.accommodation__content,
 .archive__hero {
   padding:32px;
 }
 
 .venue__eyebrow,
+.accommodation__eyebrow,
 .archive__eyebrow {
   color:var(--accent);
   font-weight:700;
@@ -695,8 +708,18 @@ h3 {
 }
 
 .venue h2,
+.accommodation h2,
 .archive h2 {
   font-size:42px;
+}
+
+.accommodation__lead {
+  color:var(--primary-dark);
+  font-size:21px;
+  font-weight:700;
+  line-height:1.45;
+  margin:0 0 18px;
+  max-width:720px;
 }
 
 .venue__address {
@@ -718,6 +741,13 @@ h3 {
   display:flex;
   flex-wrap:wrap;
   gap:12px;
+}
+
+.accommodation__actions {
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:22px;
 }
 
 .venue__button {
@@ -778,6 +808,103 @@ h3 {
   font-size:23px;
   line-height:1.2;
   margin-top:6px;
+}
+
+.accommodation__hotel-card {
+  align-items:center;
+  background:var(--soft-blue);
+  border-left:1px solid var(--line);
+  display:flex;
+  justify-content:center;
+  padding:28px;
+}
+
+.accommodation__hotel-card a {
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:6px;
+  display:flex;
+  padding:20px;
+}
+
+.accommodation__hotel-card img {
+  display:block;
+  height:auto;
+  max-height:180px;
+  max-width:180px;
+}
+
+.accommodation__details {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+  margin-top:22px;
+}
+
+.accommodation__detail-card,
+.accommodation__note {
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:6px;
+  padding:20px;
+}
+
+.accommodation__detail-card {
+  border-top:4px solid var(--primary);
+}
+
+.accommodation__detail-card--code {
+  border-top-color:var(--accent);
+}
+
+.accommodation__detail-card span {
+  color:var(--primary-dark);
+  display:block;
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:0.8px;
+  margin-bottom:8px;
+  text-transform:uppercase;
+}
+
+.accommodation__detail-card strong {
+  display:block;
+  font-size:24px;
+  line-height:1.2;
+  margin-bottom:10px;
+}
+
+.accommodation__detail-card--code strong {
+  color:var(--accent);
+  font-size:34px;
+  letter-spacing:1px;
+}
+
+.accommodation__detail-card p,
+.accommodation__note li {
+  line-height:1.5;
+}
+
+.accommodation__detail-card p {
+  margin:0;
+}
+
+.accommodation__note {
+  margin-top:22px;
+}
+
+.accommodation__note h3 {
+  color:var(--primary-dark);
+  margin:0 0 10px;
+}
+
+.accommodation__note ol {
+  margin:0;
+  padding-left:22px;
+}
+
+.accommodation__note li {
+  margin:6px 0;
 }
 
 .venue__map {
@@ -903,7 +1030,8 @@ h3 {
 
 @media(max-width:900px){
   .partners__groups,
-  .venue__tips {
+  .venue__tips,
+  .accommodation__details {
     grid-template-columns:1fr;
   }
 
@@ -917,8 +1045,14 @@ h3 {
     text-align:center;
   }
 
-  .venue__hero {
+  .venue__hero,
+  .accommodation__hero {
     grid-template-columns:1fr;
+  }
+
+  .accommodation__hotel-card {
+    border-left:0;
+    border-top:1px solid var(--line);
   }
 
   .venue__panel {
@@ -979,6 +1113,7 @@ h3 {
   .entry-fees h2,
   .prizes h2,
   .venue h2,
+  .accommodation h2,
   .rules h2,
   .archive h2 {
     font-size:30px;
@@ -996,8 +1131,13 @@ h3 {
   .prizes__section,
   .rules__section,
   .venue__content,
+  .accommodation__content,
   .archive__hero {
     padding:16px;
+  }
+
+  .accommodation__lead {
+    font-size:18px;
   }
 }
 

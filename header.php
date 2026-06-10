@@ -22,6 +22,7 @@ $englishHref = ($currentPage === 'index.php') ? 'en/' : 'en/' . $currentPage;
     <a href="nagrody.php">Nagrody</a>
     <a href="klasyfikacje.php">Klasyfikacje</a>
     <a href="sala.php">Sala gry</a>
+    <a href="noclegi.php">Noclegi</a>
     <a href="regulamin.php">Regulamin Kongresu</a>
     <a href="gppt.php">Regulamin GPPT</a>
     <a target="blank" href="https://www.facebook.com/pwzbs/photos">Zdjęcia</a>
