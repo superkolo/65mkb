@@ -77,13 +77,13 @@ include __DIR__ . '/header.php';
 <div class="day" id="day4">
 <h3>27.07.2026</h3>
 <div class="event team">10:00 <?php echo wynTC('Grand Prix Polski Teamów for the Cup of Marshal of the Pomeranian Voivodeship Mieczysław Struk','t1','',''); ?></div>
-<div class="event amateur">17:15 <?php echo wynTC('II Amateur Tournament - Teams','a2','',''); ?></div>
+<div class="event amateur">17:15 <?php echo wynTC('II Amateur Tournament - Teams for the WawaBrydż Cup','a2','',''); ?></div>
 </div>
 
 <div class="day" id="day5">
 <h3>28.07.2026</h3>
 <div class="event team">10:00 <?php echo wynTC('Grand Prix Polski Teamów - quarter-finals','t2','',''); ?></div>
-<div class="event ktp">10:00 <?php echo wynTC('VII Congress Pairs Tournament* (3x10)','k7','',''); ?></div>
+<div class="event ktp">10:00 <?php echo wynTC('VII Congress Pairs Tournament* for the Cup of the Sztum Bridge Supporters (3x10)','k7','',''); ?></div>
 <div class="event team">16:15 <?php echo wynTC('Grand Prix Polski Teamów - semi-finals','t3','',''); ?></div>
 <div class="event ktp">17:00 <?php echo wynTC('VIII Congress Pairs Tournament* for the Cup of the President of Darles-Santerm Leszek Szkudlarek - Butler IMP Pairs (3x10)','k8','',''); ?></div>
 <div class="event amateur">17:15 <?php echo wynTC('III Amateur Pairs Tournament - Butler IMP Pairs','a3','',''); ?></div>
@@ -121,9 +121,11 @@ include __DIR__ . '/header.php';
       <div class="partners__logos">
         <div class="sponsor sponsor--partner sponsor--trefl"><a href="https://trefl.com/" target="_blank" rel="noopener"><img src="../sponsor-trefl.svg" alt="Trefl S.A."></a></div>
         <div class="sponsor sponsor--wide"><a href="https://www.strefa.gda.pl/" target="_blank" rel="noopener"><img src="../sponsor-psse.png" alt="Pomeranian Special Economic Zone"></a></div>
+        <div class="sponsor sponsor--wide"><a href="https://pomorskie.eu/" target="_blank" rel="noopener"><img src="../sponsor-pomorskie.png" alt="Marshal's Office of the Pomeranian Voivodeship"></a></div>
         <div class="sponsor sponsor--partner"><a href="https://gdyniasport.pl/" target="_blank" rel="noopener"><img src="../sponsor-gdynia-sport.svg" alt="Gdynia Sports Centre"></a></div>
         <div class="sponsor sponsor--partner"><a href="https://www.wczasybrydzowe.pl/" target="_blank" rel="noopener"><img src="../sponsor-wczasy-brydzowe.png" alt="Wczasy Brydżowe"></a></div>
         <div class="sponsor sponsor--wide"><a href="https://wakacyjnepomysly.pl/" target="_blank" rel="noopener"><img src="../sponsor-wakacyjnepomysly.svg" alt="wakacyjnepomysly.pl"></a></div>
+        <div class="sponsor sponsor--partner"><a href="https://www.wawabrydz.pl/" target="_blank" rel="noopener"><img src="../sponsor-wawabrydz.jpg" alt="WawaBrydż"></a></div>
         <div class="sponsor sponsor--partner"><a href="http://www.darles.pl/" target="_blank" rel="noopener"><img src="../sponsor-darles-santerm.gif" alt="Darles-Santerm"></a></div>
         <div class="sponsor sponsor--gdansk">
           <a href="https://www.gdansk.pl/" target="_blank" rel="noopener">

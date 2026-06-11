@@ -80,13 +80,13 @@ include 'header.php';
 <div class="day" id="day4">
 <h3>27.07.2026</h3>
 <div class="event team">10:00 <?php echo wynTC('GP Teamów o Puchar Marszałka Województwa Pomorskiego Mieczysława Struka','t1','',''); ?></div>
-<div class="event amateur">17:15 <?php echo wynTC('II Turniej Amatorów - Teamy','a2','',''); ?></div>
+<div class="event amateur">17:15 <?php echo wynTC('II Turniej Amatorów - Teamy o Puchar WawaBrydż','a2','',''); ?></div>
 </div>
 
 <div class="day" id="day5">
 <h3>28.07.2026</h3>
 <div class="event team">10:00 <?php echo wynTC('GP Teamów – ćwierćfinały','t2','',''); ?></div>
-<div class="event ktp">10:00 <?php echo wynTC('VII KTP* (3x10)','k7','',''); ?></div>
+<div class="event ktp">10:00 <?php echo wynTC('VII KTP* o Puchar Sympatyków Brydża ze Sztumu (3x10)','k7','',''); ?></div>
 <div class="event team">16:15 <?php echo wynTC('GP Teamów – półfinały','t3','',''); ?></div>
 <div class="event ktp">17:00 <?php echo wynTC('VIII KTP* o Puchar Prezesa Darles-Santerm Leszka Szkudlarka - cav. uśr. (3x10)','k8','',''); ?></div>
 <div class="event amateur">17:15 <?php echo wynTC('III Turniej Par Amatorów - cav. uśr.','a3','',''); ?></div>
@@ -140,6 +140,11 @@ include 'header.php';
             <img src="sponsor-psse.png" alt="Pomorska Specjalna Strefa Ekonomiczna">
           </a>
         </div>
+        <div class="sponsor sponsor--wide">
+          <a href="https://pomorskie.eu/" target="_blank" rel="noopener">
+            <img src="sponsor-pomorskie.png" alt="Urząd Marszałkowski Województwa Pomorskiego">
+          </a>
+        </div>
         <div class="sponsor sponsor--partner">
           <a href="https://gdyniasport.pl/" target="_blank" rel="noopener">
             <img src="sponsor-gdynia-sport.svg" alt="Gdyńskie Centrum Sportu">
@@ -153,6 +158,11 @@ include 'header.php';
         <div class="sponsor sponsor--wide">
           <a href="https://wakacyjnepomysly.pl/" target="_blank" rel="noopener">
             <img src="sponsor-wakacyjnepomysly.svg" alt="wakacyjnepomysly.pl">
+          </a>
+        </div>
+        <div class="sponsor sponsor--partner">
+          <a href="https://www.wawabrydz.pl/" target="_blank" rel="noopener">
+            <img src="sponsor-wawabrydz.jpg" alt="WawaBrydż">
           </a>
         </div>
         <div class="sponsor sponsor--partner">
