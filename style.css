@@ -907,6 +907,95 @@ h3 {
   margin:6px 0;
 }
 
+.accommodation__offer {
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-left:6px solid var(--accent);
+  border-radius:6px;
+  display:grid;
+  grid-template-columns:240px minmax(0,1fr);
+  gap:0;
+  margin-top:22px;
+  overflow:hidden;
+}
+
+.accommodation__offer-logo {
+  align-items:center;
+  background:var(--soft-blue);
+  border-right:1px solid var(--line);
+  display:flex;
+  justify-content:center;
+  padding:26px;
+}
+
+.accommodation__offer-logo a {
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:6px;
+  display:flex;
+  padding:20px 24px;
+}
+
+.accommodation__offer-logo img {
+  display:block;
+  height:auto;
+  max-width:150px;
+}
+
+.accommodation__offer-content {
+  padding:24px;
+}
+
+.accommodation__offer-content h3 {
+  color:var(--ink);
+  font-size:30px;
+  margin:0 0 10px;
+}
+
+.accommodation__offer-lead {
+  font-size:18px;
+  line-height:1.55;
+  margin:0 0 18px;
+}
+
+.accommodation__offer-lead strong {
+  color:var(--accent);
+}
+
+.accommodation__offer-grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+}
+
+.accommodation__offer-grid div {
+  background:var(--muted);
+  border:1px solid var(--line);
+  border-radius:6px;
+  padding:14px;
+}
+
+.accommodation__offer-grid span {
+  color:var(--primary-dark);
+  display:block;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:0.6px;
+  margin-bottom:6px;
+  text-transform:uppercase;
+}
+
+.accommodation__offer-grid strong,
+.accommodation__offer-grid a {
+  color:var(--ink);
+  font-weight:700;
+  line-height:1.35;
+}
+
+.accommodation__offer-grid a {
+  overflow-wrap:anywhere;
+}
+
 .venue__map {
   background:var(--paper);
   border:1px solid var(--line);
@@ -1046,13 +1135,23 @@ h3 {
   }
 
   .venue__hero,
-  .accommodation__hero {
+  .accommodation__hero,
+  .accommodation__offer {
     grid-template-columns:1fr;
   }
 
-  .accommodation__hotel-card {
+  .accommodation__hotel-card,
+  .accommodation__offer-logo {
     border-left:0;
     border-top:1px solid var(--line);
+  }
+
+  .accommodation__offer-logo {
+    border-right:0;
+  }
+
+  .accommodation__offer-grid {
+    grid-template-columns:1fr;
   }
 
   .venue__panel {

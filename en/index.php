@@ -33,7 +33,7 @@ include __DIR__ . '/header.php';
 
 <div class="schedule">
 <div class="day day--record" id="day0">
-<h3>22.07.2026</h3>
+<h3>22.07.2026, Wednesday</h3>
 <div class="event special event--record">
   <span class="event__badge">World record</span>
   <strong>10:00 World record attempt</strong>
@@ -43,7 +43,7 @@ include __DIR__ . '/header.php';
 </div>
 
 <div class="day day--festival" id="day00">
-<h3>23.07.2026</h3>
+<h3>23.07.2026, Thursday</h3>
 <div class="event special event--festival">
   <span class="event__badge">Youth festival</span>
   <strong>Gdynia Youth Bridge Festival</strong>
@@ -54,7 +54,7 @@ include __DIR__ . '/header.php';
 </div>
 
 <div class="day" id="day1">
-<h3>24.07.2026</h3>
+<h3>24.07.2026, Friday</h3>
 <div class="event ktp">10:00 <?php echo wynTC('I Congress Pairs Tournament* for the Cup of the Rector of Gdańsk University of Technology (3x10)','k1','',''); ?></div>
 <div class="event youth">10:15 <?php echo wynTC('Youth Tournament - Individual','y1','',''); ?></div>
 <div class="event ktp">17:00 <?php echo wynTC('II Congress Pairs Tournament* - Memorial of PWZBS Honorary President Andrzej Zaleski (3x10)','k2','',''); ?></div>
@@ -62,7 +62,7 @@ include __DIR__ . '/header.php';
 </div>
 
 <div class="day" id="day2">
-<h3>25.07.2026</h3>
+<h3>25.07.2026, Saturday</h3>
 <div class="event ktp">10:00 <?php echo wynTC('III Congress Pairs Tournament* (3x10)','k3','',''); ?></div>
 <div class="event youth">10:15 <?php echo wynTC('Youth Tournament - Matchpoints','y3','',''); ?></div>
 <div class="event ktp">17:00 <?php echo wynTC('IV Congress Pairs Tournament** for the Cup of the President of Trefl S.A.','k4','',''); ?></div>
@@ -70,18 +70,18 @@ include __DIR__ . '/header.php';
 </div>
 
 <div class="day" id="day3">
-<h3>26.07.2026</h3>
+<h3>26.07.2026, Sunday</h3>
 <div class="event gppp">10:00 <?php echo wynTC('V Congress Pairs Tournament*** - Budimex GPPP for the Cup of the Mayor of Sopot Magdalena Czarzyńska-Jachim (5x10)','g1','',''); ?></div>
 </div>
 
 <div class="day" id="day4">
-<h3>27.07.2026</h3>
+<h3>27.07.2026, Monday</h3>
 <div class="event team">10:00 <?php echo wynTC('Grand Prix Polski Teamów for the Cup of Marshal of the Pomeranian Voivodeship Mieczysław Struk','t1','',''); ?></div>
 <div class="event amateur">17:15 <?php echo wynTC('II Amateur Tournament - Teams for the WawaBrydż Cup','a2','',''); ?></div>
 </div>
 
 <div class="day" id="day5">
-<h3>28.07.2026</h3>
+<h3>28.07.2026, Tuesday</h3>
 <div class="event team">10:00 <?php echo wynTC('Grand Prix Polski Teamów - quarter-finals','t2','',''); ?></div>
 <div class="event ktp">10:00 <?php echo wynTC('VII Congress Pairs Tournament* for the Cup of the Sztum Bridge Supporters (3x10)','k7','',''); ?></div>
 <div class="event team">16:15 <?php echo wynTC('Grand Prix Polski Teamów - semi-finals','t3','',''); ?></div>
@@ -90,7 +90,7 @@ include __DIR__ . '/header.php';
 </div>
 
 <div class="day" id="day6">
-<h3>29.07.2026</h3>
+<h3>29.07.2026, Wednesday</h3>
 <div class="event team">09:30 <?php echo wynTC('Grand Prix Polski Teamów - final','t4','',''); ?></div>
 <div class="event ktp">10:00 <?php echo wynTC('IX Congress Pairs Tournament* (3x10)','k9','',''); ?></div>
 <div class="event ktp">17:00 <?php echo wynTC('X Congress Pairs Tournament** - Mixed Pairs for the Cup of the Management Board of the Pomeranian Special Economic Zone (3x10)','k10mxt','',''); ?></div>
@@ -99,7 +99,7 @@ include __DIR__ . '/header.php';
 </div>
 
 <div class="day" id="day7">
-<h3>30.07.2026</h3>
+<h3>30.07.2026, Thursday</h3>
 <div class="event ktp">10:00 <?php echo wynTC('XI Congress Pairs Tournament** (4x10)','k11','',''); ?></div>
 <div class="event">16:30 Congress closing ceremony</div>
 </div>

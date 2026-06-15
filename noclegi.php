@@ -7,8 +7,8 @@ include 'header.php';
   <div class="accommodation__hero">
     <div class="accommodation__content">
       <p class="accommodation__eyebrow">Noclegi</p>
-      <h2>Oferta hotelowa dla uczestników Kongresu</h2>
-      <p class="accommodation__lead">Hotel Sopot przygotował specjalne stawki rezerwacyjne dla uczestników 65. Międzynarodowego Kongresu Bałtyckiego.</p>
+      <h2>Oferty hotelowe dla uczestników Kongresu</h2>
+      <p class="accommodation__lead">Polecane hotele przygotowały specjalne warunki rezerwacji dla uczestników 65. Międzynarodowego Kongresu Bałtyckiego.</p>
       <div class="accommodation__actions">
         <a class="venue__button" target="_blank" rel="noopener" href="https://booking.profitroom.com/pl/hotelsopot/details/offer/756617?codes=MMBS26&no-cache=1&currency=PLN">Zarezerwuj w specjalnej cenie</a>
         <a class="venue__button venue__button--secondary" target="_blank" rel="noopener" href="https://hotelsopot.eu/">Strona Hotelu Sopot</a>
@@ -47,6 +47,37 @@ include 'header.php';
       <li>Przy rezerwacji użyj kodu <strong>MMBS26</strong>.</li>
       <li>Sprawdź dostępność oraz końcową cenę bezpośrednio w systemie rezerwacyjnym hotelu.</li>
     </ol>
+  </div>
+
+  <div class="accommodation__offer">
+    <div class="accommodation__offer-logo">
+      <a href="https://purohotels.com/pl/gdansk/" target="_blank" rel="noopener">
+        <img src="hotel-puro-logo.svg" alt="PURO Gdańsk">
+      </a>
+    </div>
+    <div class="accommodation__offer-content">
+      <p class="accommodation__eyebrow">Oferta partnerska</p>
+      <h3>PURO Gdańsk</h3>
+      <p class="accommodation__offer-lead">Rabat <strong>-30%</strong> od cen publikowanych na stronie hotelu dla osób zainteresowanych noclegiem podczas Kongresu.</p>
+      <div class="accommodation__offer-grid">
+        <div>
+          <span>Kontakt rezerwacyjny</span>
+          <a href="mailto:gdansk@purohotel.com">gdansk@purohotel.com</a>
+        </div>
+        <div>
+          <span>Hasło rezerwacji</span>
+          <strong>65 Bałtycki Kongres w Brydżu</strong>
+        </div>
+        <div>
+          <span>Termin rezerwacji</span>
+          <strong>do 17.07.2026</strong>
+        </div>
+      </div>
+      <div class="accommodation__actions">
+        <a class="venue__button" href="mailto:gdansk@purohotel.com?subject=65%20Ba%C5%82tycki%20Kongres%20w%20Bryd%C5%BCu">Napisz do rezerwacji</a>
+        <a class="venue__button venue__button--secondary" target="_blank" rel="noopener" href="https://purohotels.com/pl/gdansk/">Strona PURO Gdańsk</a>
+      </div>
+    </div>
   </div>
 </section>
 
