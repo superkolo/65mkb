@@ -63,7 +63,7 @@ include __DIR__ . '/header.php';
 
 <div class="day" id="day2">
 <h3>25.07.2026, Saturday</h3>
-<div class="event ktp">10:00 <?php echo wynTC('III Congress Pairs Tournament* (3x10)','k3','',''); ?></div>
+<div class="event ktp">10:00 <?php echo wynTC('III Congress Pairs Tournament* for the Okna Boniek Cup (3x10)','k3','',''); ?></div>
 <div class="event youth">10:15 <?php echo wynTC('Youth Tournament - Matchpoints','y3','',''); ?></div>
 <div class="event ktp">17:00 <?php echo wynTC('IV Congress Pairs Tournament** for the Cup of the President of Trefl S.A.','k4','',''); ?></div>
 <div class="event amateur">17:15 <?php echo wynTC('I Amateur Pairs Tournament for the wakacyjnepomysly.pl Cup','a1','',''); ?></div>
@@ -92,8 +92,8 @@ include __DIR__ . '/header.php';
 <div class="day" id="day6">
 <h3>29.07.2026, Wednesday</h3>
 <div class="event team">09:30 <?php echo wynTC('Grand Prix Polski Teamów - final','t4','',''); ?></div>
-<div class="event ktp">10:00 <?php echo wynTC('IX Congress Pairs Tournament* (3x10)','k9','',''); ?></div>
-<div class="event ktp">17:00 <?php echo wynTC('X Congress Pairs Tournament** - Mixed Pairs for the Cup of the Management Board of the Pomeranian Special Economic Zone (3x10)','k10mxt','',''); ?></div>
+<div class="event ktp">10:00 <?php echo wynTC('IX Congress Pairs Tournament* - Krzysztof “Generał” Eustachewicz Memorial (3x10)','k9','',''); ?></div>
+<div class="event ktp">17:00 <?php echo wynTC('X Congress Pairs Tournament* - Mixed Pairs for the Cup of the Management Board of the Pomeranian Special Economic Zone (3x10)','k10mxt','',''); ?></div>
 <div class="event ktp">17:00 <?php echo wynTC('X Congress Pairs Tournament* (3x10)','k10','',''); ?></div>
 <div class="event amateur">17:15 <?php echo wynTC('IV Amateur Pairs Tournament','a4','',''); ?></div>
 </div>
@@ -126,6 +126,8 @@ include __DIR__ . '/header.php';
         <div class="sponsor sponsor--partner"><a href="https://www.wczasybrydzowe.pl/" target="_blank" rel="noopener"><img src="../sponsor-wczasy-brydzowe.png" alt="Wczasy Brydżowe"></a></div>
         <div class="sponsor sponsor--wide"><a href="https://wakacyjnepomysly.pl/" target="_blank" rel="noopener"><img src="../sponsor-wakacyjnepomysly.svg" alt="wakacyjnepomysly.pl"></a></div>
         <div class="sponsor sponsor--partner"><a href="https://www.wawabrydz.pl/" target="_blank" rel="noopener"><img src="../sponsor-wawabrydz.jpg" alt="WawaBrydż"></a></div>
+        <div class="sponsor sponsor--partner"><a href="https://oknaboniek.pl/" target="_blank" rel="noopener"><img src="../sponsor-okna-boniek.jpg" alt="Okna Boniek"></a></div>
+        <div class="sponsor sponsor--partner sponsor--text"><span>Marek Koczerga</span></div>
         <div class="sponsor sponsor--partner"><a href="http://www.darles.pl/" target="_blank" rel="noopener"><img src="../sponsor-darles-santerm.gif" alt="Darles-Santerm"></a></div>
         <div class="sponsor sponsor--gdansk">
           <a href="https://www.gdansk.pl/" target="_blank" rel="noopener">

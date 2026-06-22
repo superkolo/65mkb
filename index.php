@@ -66,7 +66,7 @@ include 'header.php';
 
 <div class="day" id="day2">
 <h3>25.07.2026, sobota</h3>
-<div class="event ktp">10:00 <?php echo wynTC('III KTP* (3x10)','k3','',''); ?></div>
+<div class="event ktp">10:00 <?php echo wynTC('III KTP* o Puchar firmy Okna Boniek (3x10)','k3','',''); ?></div>
 <div class="event youth">10:15 <?php echo wynTC('Turniej Młodzieżowy - Maksy','y3','',''); ?></div>
 <div class="event ktp">17:00 <?php echo wynTC('IV KTP** o Puchar Prezesa Trefl S.A.','k4','',''); ?></div>
 <div class="event amateur">17:15 <?php echo wynTC('I Turniej Par Amatorów o Puchar wakacyjnepomysly.pl','a1','',''); ?></div>
@@ -95,8 +95,8 @@ include 'header.php';
 <div class="day" id="day6">
 <h3>29.07.2026, środa</h3>
 <div class="event team">09:30 <?php echo wynTC('GP Teamów - finał','t4','',''); ?></div>
-<div class="event ktp">10:00 <?php echo wynTC('IX KTP* (3x10)','k9','',''); ?></div>
-<div class="event ktp">17:00 <?php echo wynTC('X KTP** - miksty o Puchar Zarządu Pomorskiej Specjalnej Strefy Ekonomicznej (3x10)','k10mxt','',''); ?></div>
+<div class="event ktp">10:00 <?php echo wynTC('IX KTP* - memoriał Krzysztofa “Generała” Eustachewicza (3x10)','k9','',''); ?></div>
+<div class="event ktp">17:00 <?php echo wynTC('X KTP* - miksty o Puchar Zarządu Pomorskiej Specjalnej Strefy Ekonomicznej (3x10)','k10mxt','',''); ?></div>
 <div class="event ktp">17:00 <?php echo wynTC('X KTP* (3x10)','k10','',''); ?></div>
 <div class="event amateur">17:15 <?php echo wynTC('IV Turniej Par Amatorów','a4','',''); ?></div>
 </div>
@@ -164,6 +164,14 @@ include 'header.php';
           <a href="https://www.wawabrydz.pl/" target="_blank" rel="noopener">
             <img src="sponsor-wawabrydz.jpg" alt="WawaBrydż">
           </a>
+        </div>
+        <div class="sponsor sponsor--partner">
+          <a href="https://oknaboniek.pl/" target="_blank" rel="noopener">
+            <img src="sponsor-okna-boniek.jpg" alt="Okna Boniek">
+          </a>
+        </div>
+        <div class="sponsor sponsor--partner sponsor--text">
+          <span>Marek Koczerga</span>
         </div>
         <div class="sponsor sponsor--partner">
           <a href="http://www.darles.pl/" target="_blank" rel="noopener">

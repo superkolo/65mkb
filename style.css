@@ -406,6 +406,14 @@ h3 {
   width:100%;
 }
 
+.sponsor--text {
+  color:var(--primary-dark);
+  font-size:24px;
+  font-weight:700;
+  line-height:1.15;
+  text-align:center;
+}
+
 .sponsor--wt {
   width:220px;
 }
