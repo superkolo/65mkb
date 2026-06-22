@@ -517,6 +517,12 @@ h3 {
   margin:0 0 16px;
 }
 
+.entry-fees__subtitle {
+  color:var(--primary-dark);
+  font-size:22px;
+  margin:22px 0 10px;
+}
+
 .entry-fees__table-wrap,
 .prizes__table-wrap {
   background:var(--paper);
@@ -531,7 +537,7 @@ h3 {
 }
 
 .entry-fees__table {
-  min-width:700px;
+  min-width:820px;
 }
 
 .prizes__table {

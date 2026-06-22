@@ -7,23 +7,26 @@ include 'header.php';
   <h2>Wpisowe (od osoby)</h2>
   <p class="entry-fees__lead">cennik dla rejestracji online<br>płatność na miejscu +10 zł</p>
 
+  <h3 class="entry-fees__subtitle">Turnieje GPPP i GPPT</h3>
   <div class="entry-fees__table-wrap">
     <table class="entry-fees__table">
       <thead>
         <tr>
           <th></th>
           <th>Członek PZBS</th>
-          <th>Juniorzy<sup>1</sup></th>
-          <th>Uczniowie<br>do 19 lat<sup>1</sup></th>
+          <th>Juniorzy<br>19-25 i 66+<sup>1</sup></th>
+          <th>Juniorzy<br>16-18<sup>1</sup></th>
+          <th>Młodzicy<br>do 15 lat<sup>1</sup></th>
           <th>Niezrzeszeni<sup>2</sup></th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td><span class="fee-dot fee-dot--empty"></span>Grand Prix Polski Par</td>
-          <td>125 zł</td>
-          <td>70 zł</td>
-          <td>35 zł</td>
+          <td>140 zł</td>
+          <td>100 zł</td>
+          <td>50 zł</td>
+          <td>30 zł</td>
           <td>-</td>
         </tr>
         <tr>
@@ -31,12 +34,32 @@ include 'header.php';
           <td>140 zł</td>
           <td>100 zł</td>
           <td>50 zł</td>
+          <td>30 zł</td>
           <td>-</td>
         </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="entry-fees__subtitle">Pozostałe turnieje</h3>
+  <div class="entry-fees__table-wrap">
+    <table class="entry-fees__table entry-fees__table--regular">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Członek PZBS</th>
+          <th>Juniorzy<br>19-25<sup>1</sup></th>
+          <th>Juniorzy<br>16-18<sup>1</sup></th>
+          <th>Młodzicy<br>do 15 lat<sup>1</sup></th>
+          <th>Niezrzeszeni<sup>2</sup></th>
+        </tr>
+      </thead>
+      <tbody>
         <tr>
           <td><span class="fee-dot fee-dot--blue"></span>Turniej Kongresowy (3x10)</td>
           <td>75 zł</td>
           <td>50 zł</td>
+          <td>20 zł</td>
           <td>20 zł</td>
           <td>95 zł</td>
         </tr>
@@ -45,10 +68,12 @@ include 'header.php';
           <td>95 zł</td>
           <td>60 zł</td>
           <td>25 zł</td>
+          <td>25 zł</td>
           <td>115 zł</td>
         </tr>
         <tr>
           <td><span class="fee-dot fee-dot--yellow"></span>Turniej Amatorów<sup>4</sup></td>
+          <td>20 zł</td>
           <td>20 zł</td>
           <td>20 zł</td>
           <td>20 zł</td>
@@ -59,9 +84,9 @@ include 'header.php';
   </div>
 
   <ol class="entry-fees__notes">
-    <li>Dla osób z opłaconą bieżącą składką PZBS oraz młodzieży zagranicznej. Nie dotyczy turniejów amatorskich.</li>
+    <li>Dla osób z opłaconą bieżącą składką PZBS oraz młodzieży zagranicznej. Ulga od 66 lat dotyczy wyłącznie turniejów GPPP i GPPT. Nie dotyczy turniejów amatorskich.</li>
     <li>W turniejach z cyklu GPPP oraz GPPT prawo startu mają wyłącznie zawodnicy z opłaconą bieżącą składką PZBS oraz zawodnicy zagraniczni z opłaconą składką w zagranicznej federacji.</li>
-    <li>Za każdą kolejną fazę 50 zł niezależnie od kategorii.</li>
+    <li>Wysokość wpisowego do kolejnych etapów GPPT wynosi 200 zł od teamu. Przez etap rozumiemy rozgrywki na dystansie 24-36 rozdań, a nie krótki mecz play-off. Dopłaty za poszczególne etapy wchodzą w całości do ogólnej kwoty wpisowego.</li>
     <li>Uprawnieni do udziału w turnieju są amatorzy, tzn. gracze niezrzeszeni w PZBS lub zrzeszeni w PZBS o WK nie przekraczającym 1.5.</li>
     <li>Nagrody będą wypłacane przelewem.</li>
     <li>Zawodnicy z Rosji i Białorusi niezrzeszeni w PZBS nie zostaną dopuszczeni do gry. Pozostali zawodnicy zagraniczni płacą wpisowe jak członkowie PZBS, z tym że owi zawodnicy muszą być zarejestrowani w swoim macierzystym związku brydżowym.</li>
