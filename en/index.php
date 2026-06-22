@@ -55,52 +55,52 @@ include __DIR__ . '/header.php';
 
 <div class="day" id="day1">
 <h3>24.07.2026, Friday</h3>
-<div class="event ktp">10:00 <?php echo wynTC('I Congress Pairs Tournament* for the Cup of the Rector of Gdańsk University of Technology (3x10)','k1','',''); ?></div>
+<div class="event ktp">10:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/jYbSU7HnGMq6Uql4lAYF" target="_blank" rel="noopener">I Congress Pairs Tournament* for the Cup of the Rector of Gdańsk University of Technology (3x10)</a></div>
 <div class="event youth">10:15 <?php echo wynTC('Youth Tournament - Individual','y1','',''); ?></div>
-<div class="event ktp">17:00 <?php echo wynTC('II Congress Pairs Tournament* - Memorial of PWZBS Honorary President Andrzej Zaleski (3x10)','k2','',''); ?></div>
+<div class="event ktp">17:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/MA5PQXb1GvjXY2U1Ce6W" target="_blank" rel="noopener">II Congress Pairs Tournament* - Memorial of PWZBS Honorary President Andrzej Zaleski (3x10)</a></div>
 <div class="event youth">17:15 <?php echo wynTC('Youth Tournament - Butler IMP Pairs','y2','',''); ?></div>
 </div>
 
 <div class="day" id="day2">
 <h3>25.07.2026, Saturday</h3>
-<div class="event ktp">10:00 <?php echo wynTC('III Congress Pairs Tournament* for the Okna Boniek Cup (3x10)','k3','',''); ?></div>
+<div class="event ktp">10:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/3ZGWHuwNsdROvGXt1oW7" target="_blank" rel="noopener">III Congress Pairs Tournament* for the Okna Boniek Cup (3x10)</a></div>
 <div class="event youth">10:15 <?php echo wynTC('Youth Tournament - Matchpoints','y3','',''); ?></div>
-<div class="event ktp">17:00 <?php echo wynTC('IV Congress Pairs Tournament** for the Cup of the President of Trefl S.A.','k4','',''); ?></div>
-<div class="event amateur">17:15 <?php echo wynTC('I Amateur Pairs Tournament for the wakacyjnepomysly.pl Cup','a1','',''); ?></div>
+<div class="event ktp">17:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/q44b5K58fQEek1jrKzPW" target="_blank" rel="noopener">IV Congress Pairs Tournament** for the Cup of the President of Trefl S.A.</a></div>
+<div class="event amateur">17:15 <a href="https://startowki.vuyap.com/tournament/register/4nvh/RhmqIdWeOWzHVuifCEfr" target="_blank" rel="noopener">I Amateur Pairs Tournament for the wakacyjnepomysly.pl Cup</a></div>
 </div>
 
 <div class="day" id="day3">
 <h3>26.07.2026, Sunday</h3>
-<div class="event gppp">10:00 <?php echo wynTC('V Congress Pairs Tournament*** - Budimex GPPP for the Cup of the Mayor of Sopot Magdalena Czarzyńska-Jachim (5x10)','g1','',''); ?></div>
+<div class="event gppp">10:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/whlRjBZTuaJuFGs0RDib" target="_blank" rel="noopener">V Congress Pairs Tournament*** - Budimex GPPP for the Cup of the Mayor of Sopot Magdalena Czarzyńska-Jachim (5x10)</a></div>
 </div>
 
 <div class="day" id="day4">
 <h3>27.07.2026, Monday</h3>
-<div class="event team">10:00 <?php echo wynTC('Grand Prix Polski Teamów for the Cup of Marshal of the Pomeranian Voivodeship Mieczysław Struk','t1','',''); ?></div>
-<div class="event amateur">17:15 <?php echo wynTC('II Amateur Tournament - Teams for the WawaBrydż Cup','a2','',''); ?></div>
+<div class="event team">10:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/oHzsV9uUr9oD8IGD0fWE" target="_blank" rel="noopener">Grand Prix Polski Teamów for the Cup of Marshal of the Pomeranian Voivodeship Mieczysław Struk</a></div>
+<div class="event amateur">17:15 <a href="https://startowki.vuyap.com/tournament/register/4nvh/417HZqxJB6aVlKUWhUqS" target="_blank" rel="noopener">II Amateur Tournament - Teams for the WawaBrydż Cup</a></div>
 </div>
 
 <div class="day" id="day5">
 <h3>28.07.2026, Tuesday</h3>
 <div class="event team">10:00 <?php echo wynTC('Grand Prix Polski Teamów - quarter-finals','t2','',''); ?></div>
-<div class="event ktp">10:00 <?php echo wynTC('VII Congress Pairs Tournament* for the Cup of the Sztum Bridge Supporters (3x10)','k7','',''); ?></div>
+<div class="event ktp">10:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/inwzWBLyRJT0lWUwBv6R" target="_blank" rel="noopener">VII Congress Pairs Tournament* for the Cup of the Sztum Bridge Supporters (3x10)</a></div>
 <div class="event team">16:15 <?php echo wynTC('Grand Prix Polski Teamów - semi-finals','t3','',''); ?></div>
-<div class="event ktp">17:00 <?php echo wynTC('VIII Congress Pairs Tournament* for the Cup of the President of Darles-Santerm Leszek Szkudlarek - Butler IMP Pairs (3x10)','k8','',''); ?></div>
-<div class="event amateur">17:15 <?php echo wynTC('III Amateur Pairs Tournament - Butler IMP Pairs','a3','',''); ?></div>
+<div class="event ktp">17:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/FCLlKEogC05agEywHD0i" target="_blank" rel="noopener">VIII Congress Pairs Tournament* for the Cup of the President of Darles-Santerm Leszek Szkudlarek - Butler IMP Pairs (3x10)</a></div>
+<div class="event amateur">17:15 <a href="https://startowki.vuyap.com/tournament/register/4nvh/uqwYVIsmknbhjPwkUhhS" target="_blank" rel="noopener">III Amateur Pairs Tournament - Butler IMP Pairs</a></div>
 </div>
 
 <div class="day" id="day6">
 <h3>29.07.2026, Wednesday</h3>
 <div class="event team">09:30 <?php echo wynTC('Grand Prix Polski Teamów - final','t4','',''); ?></div>
-<div class="event ktp">10:00 <?php echo wynTC('IX Congress Pairs Tournament* - Krzysztof “Generał” Eustachewicz Memorial (3x10)','k9','',''); ?></div>
-<div class="event ktp">17:00 <?php echo wynTC('X Congress Pairs Tournament* - Mixed Pairs for the Cup of the Management Board of the Pomeranian Special Economic Zone (3x10)','k10mxt','',''); ?></div>
-<div class="event ktp">17:00 <?php echo wynTC('X Congress Pairs Tournament* (3x10)','k10','',''); ?></div>
-<div class="event amateur">17:15 <?php echo wynTC('IV Amateur Pairs Tournament','a4','',''); ?></div>
+<div class="event ktp">10:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/PWb0wUZFLmUJTNtXVIrq" target="_blank" rel="noopener">IX Congress Pairs Tournament* - Krzysztof “Generał” Eustachewicz Memorial (3x10)</a></div>
+<div class="event ktp">17:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/8Rv5uN3PM6BPZob3QGg8" target="_blank" rel="noopener">X Congress Pairs Tournament* - Mixed Pairs for the Cup of the Management Board of the Pomeranian Special Economic Zone (3x10)</a></div>
+<div class="event ktp">17:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/dU5jwQbpJUqLH6M9kdw1" target="_blank" rel="noopener">X Congress Pairs Tournament* (3x10)</a></div>
+<div class="event amateur">17:15 <a href="https://startowki.vuyap.com/tournament/register/4nvh/fbCPTEVGCYav5PDY2Gip" target="_blank" rel="noopener">IV Amateur Pairs Tournament</a></div>
 </div>
 
 <div class="day" id="day7">
 <h3>30.07.2026, Thursday</h3>
-<div class="event ktp">10:00 <?php echo wynTC('XI Congress Pairs Tournament** (4x10)','k11','',''); ?></div>
+<div class="event ktp">10:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/ZgbGz9CyQM46vAYlQqk1" target="_blank" rel="noopener">XI Congress Pairs Tournament** (4x10)</a></div>
 <div class="event">16:30 Congress closing ceremony</div>
 </div>
 </div>

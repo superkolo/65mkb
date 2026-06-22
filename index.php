@@ -58,52 +58,52 @@ include 'header.php';
 
 <div class="day" id="day1">
 <h3>24.07.2026, piątek</h3>
-<div class="event ktp">10:00 <?php echo wynTC('I KTP* o Puchar Rektora Politechniki Gdańskiej (3x10)','k1','',''); ?></div>
+<div class="event ktp">10:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/jYbSU7HnGMq6Uql4lAYF" target="_blank" rel="noopener">I KTP* o Puchar Rektora Politechniki Gdańskiej (3x10)</a></div>
 <div class="event youth">10:15 <?php echo wynTC('Turniej Młodzieżowy - Indywiduel','y1','',''); ?></div>
-<div class="event ktp">17:00 <?php echo wynTC('II KTP* - Memoriał Honorowego Prezesa PWZBS Andrzeja Zaleskiego (3x10)','k2','',''); ?></div>
+<div class="event ktp">17:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/MA5PQXb1GvjXY2U1Ce6W" target="_blank" rel="noopener">II KTP* - Memoriał Honorowego Prezesa PWZBS Andrzeja Zaleskiego (3x10)</a></div>
 <div class="event youth">17:15 <?php echo wynTC('Turniej Młodzieżowy - Cav. uśr','y2','',''); ?></div>
 </div>
 
 <div class="day" id="day2">
 <h3>25.07.2026, sobota</h3>
-<div class="event ktp">10:00 <?php echo wynTC('III KTP* o Puchar firmy Okna Boniek (3x10)','k3','',''); ?></div>
+<div class="event ktp">10:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/3ZGWHuwNsdROvGXt1oW7" target="_blank" rel="noopener">III KTP* o Puchar firmy Okna Boniek (3x10)</a></div>
 <div class="event youth">10:15 <?php echo wynTC('Turniej Młodzieżowy - Maksy','y3','',''); ?></div>
-<div class="event ktp">17:00 <?php echo wynTC('IV KTP** o Puchar Prezesa Trefl S.A.','k4','',''); ?></div>
-<div class="event amateur">17:15 <?php echo wynTC('I Turniej Par Amatorów o Puchar wakacyjnepomysly.pl','a1','',''); ?></div>
+<div class="event ktp">17:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/q44b5K58fQEek1jrKzPW" target="_blank" rel="noopener">IV KTP** o Puchar Prezesa Trefl S.A.</a></div>
+<div class="event amateur">17:15 <a href="https://startowki.vuyap.com/tournament/register/4nvh/RhmqIdWeOWzHVuifCEfr" target="_blank" rel="noopener">I Turniej Par Amatorów o Puchar wakacyjnepomysly.pl</a></div>
 </div>
 
 <div class="day" id="day3">
 <h3>26.07.2026, niedziela</h3>
-<div class="event gppp">10:00 <?php echo wynTC('V KTP*** - Budimex GPPP o Puchar Prezydentki Sopotu Magdaleny Czarzyńskiej-Jachim (5x10)','g1','',''); ?></div>
+<div class="event gppp">10:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/whlRjBZTuaJuFGs0RDib" target="_blank" rel="noopener">V KTP*** - Budimex GPPP o Puchar Prezydentki Sopotu Magdaleny Czarzyńskiej-Jachim (5x10)</a></div>
 </div>
 
 <div class="day" id="day4">
 <h3>27.07.2026, poniedziałek</h3>
-<div class="event team">10:00 <?php echo wynTC('GP Teamów o Puchar Marszałka Województwa Pomorskiego Mieczysława Struka','t1','',''); ?></div>
-<div class="event amateur">17:15 <?php echo wynTC('II Turniej Amatorów - Teamy o Puchar WawaBrydż','a2','',''); ?></div>
+<div class="event team">10:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/oHzsV9uUr9oD8IGD0fWE" target="_blank" rel="noopener">GP Teamów o Puchar Marszałka Województwa Pomorskiego Mieczysława Struka</a></div>
+<div class="event amateur">17:15 <a href="https://startowki.vuyap.com/tournament/register/4nvh/417HZqxJB6aVlKUWhUqS" target="_blank" rel="noopener">II Turniej Amatorów - Teamy o Puchar WawaBrydż</a></div>
 </div>
 
 <div class="day" id="day5">
 <h3>28.07.2026, wtorek</h3>
 <div class="event team">10:00 <?php echo wynTC('GP Teamów – ćwierćfinały','t2','',''); ?></div>
-<div class="event ktp">10:00 <?php echo wynTC('VII KTP* o Puchar Sympatyków Brydża ze Sztumu (3x10)','k7','',''); ?></div>
+<div class="event ktp">10:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/inwzWBLyRJT0lWUwBv6R" target="_blank" rel="noopener">VII KTP* o Puchar Sympatyków Brydża ze Sztumu (3x10)</a></div>
 <div class="event team">16:15 <?php echo wynTC('GP Teamów – półfinały','t3','',''); ?></div>
-<div class="event ktp">17:00 <?php echo wynTC('VIII KTP* o Puchar Prezesa Darles-Santerm Leszka Szkudlarka - cav. uśr. (3x10)','k8','',''); ?></div>
-<div class="event amateur">17:15 <?php echo wynTC('III Turniej Par Amatorów - cav. uśr.','a3','',''); ?></div>
+<div class="event ktp">17:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/FCLlKEogC05agEywHD0i" target="_blank" rel="noopener">VIII KTP* o Puchar Prezesa Darles-Santerm Leszka Szkudlarka - cav. uśr. (3x10)</a></div>
+<div class="event amateur">17:15 <a href="https://startowki.vuyap.com/tournament/register/4nvh/uqwYVIsmknbhjPwkUhhS" target="_blank" rel="noopener">III Turniej Par Amatorów - cav. uśr.</a></div>
 </div>
 
 <div class="day" id="day6">
 <h3>29.07.2026, środa</h3>
 <div class="event team">09:30 <?php echo wynTC('GP Teamów - finał','t4','',''); ?></div>
-<div class="event ktp">10:00 <?php echo wynTC('IX KTP* - memoriał Krzysztofa “Generała” Eustachewicza (3x10)','k9','',''); ?></div>
-<div class="event ktp">17:00 <?php echo wynTC('X KTP* - miksty o Puchar Zarządu Pomorskiej Specjalnej Strefy Ekonomicznej (3x10)','k10mxt','',''); ?></div>
-<div class="event ktp">17:00 <?php echo wynTC('X KTP* (3x10)','k10','',''); ?></div>
-<div class="event amateur">17:15 <?php echo wynTC('IV Turniej Par Amatorów','a4','',''); ?></div>
+<div class="event ktp">10:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/PWb0wUZFLmUJTNtXVIrq" target="_blank" rel="noopener">IX KTP* - memoriał Krzysztofa “Generała” Eustachewicza (3x10)</a></div>
+<div class="event ktp">17:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/8Rv5uN3PM6BPZob3QGg8" target="_blank" rel="noopener">X KTP* - miksty o Puchar Zarządu Pomorskiej Specjalnej Strefy Ekonomicznej (3x10)</a></div>
+<div class="event ktp">17:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/dU5jwQbpJUqLH6M9kdw1" target="_blank" rel="noopener">X KTP* (3x10)</a></div>
+<div class="event amateur">17:15 <a href="https://startowki.vuyap.com/tournament/register/4nvh/fbCPTEVGCYav5PDY2Gip" target="_blank" rel="noopener">IV Turniej Par Amatorów</a></div>
 </div>
 
 <div class="day" id="day7">
 <h3>30.07.2026, czwartek</h3>
-<div class="event ktp">10:00 <?php echo wynTC('XI KTP** (4x10)','k11','',''); ?></div>
+<div class="event ktp">10:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/ZgbGz9CyQM46vAYlQqk1" target="_blank" rel="noopener">XI KTP** (4x10)</a></div>
 <div class="event">16:30 Ceremonia zakończenia Kongresu</div>
 </div></div>
 
