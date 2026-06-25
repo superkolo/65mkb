@@ -68,8 +68,18 @@ include 'header.php';
 <h3>25.07.2026, sobota</h3>
 <div class="event ktp">10:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/3ZGWHuwNsdROvGXt1oW7" target="_blank" rel="noopener">III KTP* o Puchar firmy Okna Boniek (3x10)</a></div>
 <div class="event youth">10:15 <?php echo wynTC('Turniej Młodzieżowy - Maksy','y3','',''); ?></div>
-<div class="event ktp">17:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/q44b5K58fQEek1jrKzPW" target="_blank" rel="noopener">IV KTP** o Puchar Prezesa Trefl S.A.</a></div>
-<div class="event amateur">17:15 <a href="https://startowki.vuyap.com/tournament/register/4nvh/RhmqIdWeOWzHVuifCEfr" target="_blank" rel="noopener">I Turniej Par Amatorów o Puchar wakacyjnepomysly.pl</a></div>
+<div class="event special event--panel">
+  <span class="event__badge">Panel dyskusyjny</span>
+  <strong>16:30 Sport to też kultura - dlaczego warto pamiętać o sportowym dziedzictwie?</strong>
+  <span>Z udziałem zaproszonych gości</span>
+</div>
+<div class="event special event--film">
+  <span class="event__badge">Premiera</span>
+  <strong>17:00 Premiera filmu dokumentalnego o Kongresie Bałtyckim</strong>
+  <span>Reżyseria: <em>Konrad Kulczyński</em></span>
+</div>
+<div class="event ktp">17:30 <a href="https://startowki.vuyap.com/tournament/register/4nvh/q44b5K58fQEek1jrKzPW" target="_blank" rel="noopener">IV KTP** o Puchar Prezesa Trefl S.A.</a></div>
+<div class="event amateur">17:30 <a href="https://startowki.vuyap.com/tournament/register/4nvh/RhmqIdWeOWzHVuifCEfr" target="_blank" rel="noopener">I Turniej Par Amatorów o Puchar wakacyjnepomysly.pl</a></div>
 </div>
 
 <div class="day" id="day3">

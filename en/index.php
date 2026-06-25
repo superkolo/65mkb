@@ -65,8 +65,18 @@ include __DIR__ . '/header.php';
 <h3>25.07.2026, Saturday</h3>
 <div class="event ktp">10:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/3ZGWHuwNsdROvGXt1oW7" target="_blank" rel="noopener">III Congress Pairs Tournament* for the Okna Boniek Cup (3x10)</a></div>
 <div class="event youth">10:15 <?php echo wynTC('Youth Tournament - Matchpoints','y3','',''); ?></div>
-<div class="event ktp">17:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/q44b5K58fQEek1jrKzPW" target="_blank" rel="noopener">IV Congress Pairs Tournament** for the Cup of the President of Trefl S.A.</a></div>
-<div class="event amateur">17:15 <a href="https://startowki.vuyap.com/tournament/register/4nvh/RhmqIdWeOWzHVuifCEfr" target="_blank" rel="noopener">I Amateur Pairs Tournament for the wakacyjnepomysly.pl Cup</a></div>
+<div class="event special event--panel">
+  <span class="event__badge">Panel discussion</span>
+  <strong>16:30 Sport is also culture - why should we remember sporting heritage?</strong>
+  <span>With invited guests</span>
+</div>
+<div class="event special event--film">
+  <span class="event__badge">Premiere</span>
+  <strong>17:00 Premiere of the documentary film about the Baltic Congress</strong>
+  <span>Directed by: <em>Konrad Kulczyński</em></span>
+</div>
+<div class="event ktp">17:30 <a href="https://startowki.vuyap.com/tournament/register/4nvh/q44b5K58fQEek1jrKzPW" target="_blank" rel="noopener">IV Congress Pairs Tournament** for the Cup of the President of Trefl S.A.</a></div>
+<div class="event amateur">17:30 <a href="https://startowki.vuyap.com/tournament/register/4nvh/RhmqIdWeOWzHVuifCEfr" target="_blank" rel="noopener">I Amateur Pairs Tournament for the wakacyjnepomysly.pl Cup</a></div>
 </div>
 
 <div class="day" id="day3">
