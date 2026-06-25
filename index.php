@@ -173,6 +173,9 @@ include 'header.php';
         <div class="sponsor sponsor--partner sponsor--text">
           <span>Marek Koczerga</span>
         </div>
+        <div class="sponsor sponsor--partner sponsor--text">
+          <span>Witold Kaliński</span>
+        </div>
         <div class="sponsor sponsor--partner">
           <a href="http://www.darles.pl/" target="_blank" rel="noopener">
             <img src="sponsor-darles-santerm.gif" alt="Darles-Santerm">
@@ -208,6 +211,11 @@ include 'header.php';
         <div class="sponsor sponsor--wide">
           <a href="https://iiyama.com/" target="_blank" rel="noopener">
             <img src="partner-iiyama-logo.svg" alt="iiyama">
+          </a>
+        </div>
+        <div class="sponsor sponsor--wide">
+          <a href="https://fisherman.com.pl/" target="_blank" rel="noopener">
+            <img src="partner-fisherman-logo.png" alt="Fisherman Restaurant">
           </a>
         </div>
       </div>

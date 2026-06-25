@@ -128,6 +128,7 @@ include __DIR__ . '/header.php';
         <div class="sponsor sponsor--partner"><a href="https://www.wawabrydz.pl/" target="_blank" rel="noopener"><img src="../sponsor-wawabrydz.jpg" alt="WawaBrydż"></a></div>
         <div class="sponsor sponsor--partner"><a href="https://oknaboniek.pl/" target="_blank" rel="noopener"><img src="../sponsor-okna-boniek.jpg" alt="Okna Boniek"></a></div>
         <div class="sponsor sponsor--partner sponsor--text"><span>Marek Koczerga</span></div>
+        <div class="sponsor sponsor--partner sponsor--text"><span>Witold Kaliński</span></div>
         <div class="sponsor sponsor--partner"><a href="http://www.darles.pl/" target="_blank" rel="noopener"><img src="../sponsor-darles-santerm.gif" alt="Darles-Santerm"></a></div>
         <div class="sponsor sponsor--gdansk">
           <a href="https://www.gdansk.pl/" target="_blank" rel="noopener">
@@ -145,6 +146,7 @@ include __DIR__ . '/header.php';
         <div class="sponsor sponsor--wide"><a href="https://fundacja.trefl.com/muzeum-kart/" target="_blank" rel="noopener"><img src="../partner-muzeum-kart-logo.svg" alt="Playing Card Museum Ulica Brydżowa"></a></div>
         <div class="sponsor sponsor--wide"><a href="https://www.posnet.com.pl/" target="_blank" rel="noopener"><img src="../partner-posnet-logo.png" alt="POSNET"></a></div>
         <div class="sponsor sponsor--wide"><a href="https://iiyama.com/" target="_blank" rel="noopener"><img src="../partner-iiyama-logo.svg" alt="iiyama"></a></div>
+        <div class="sponsor sponsor--wide"><a href="https://fisherman.com.pl/" target="_blank" rel="noopener"><img src="../partner-fisherman-logo.png" alt="Fisherman Restaurant"></a></div>
       </div>
     </section>
 
