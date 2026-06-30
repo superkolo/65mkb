@@ -157,7 +157,7 @@ include 'header.php';
         </div>
         <div class="sponsor sponsor--partner">
           <a href="https://gdyniasport.pl/" target="_blank" rel="noopener">
-            <img src="sponsor-gdynia-sport.svg" alt="Gdyńskie Centrum Sportu">
+            <img src="sponsor-gdynia-sport.png" alt="Gdyńskie Centrum Sportu">
           </a>
         </div>
         <div class="sponsor sponsor--partner">
@@ -178,6 +178,11 @@ include 'header.php';
         <div class="sponsor sponsor--partner">
           <a href="https://oknaboniek.pl/" target="_blank" rel="noopener">
             <img src="sponsor-okna-boniek.jpg" alt="Okna Boniek">
+          </a>
+        </div>
+        <div class="sponsor sponsor--wide">
+          <a href="https://saaspine.com/" target="_blank" rel="noopener">
+            <img src="sponsor-saaspine.svg" alt="SaaSpine">
           </a>
         </div>
         <div class="sponsor sponsor--partner sponsor--text">
@@ -226,6 +231,21 @@ include 'header.php';
         <div class="sponsor sponsor--wide">
           <a href="https://fisherman.com.pl/" target="_blank" rel="noopener">
             <img src="partner-fisherman-logo.png" alt="Fisherman Restaurant">
+          </a>
+        </div>
+        <div class="sponsor sponsor--wide">
+          <a href="https://mosirsopot.pl/" target="_blank" rel="noopener">
+            <img src="partner-mosir-sopot-logo.svg" alt="MOSiR Sopot">
+          </a>
+        </div>
+        <div class="sponsor sponsor--wide">
+          <a href="https://entrevilles.pl/" target="_blank" rel="noopener">
+            <img src="partner-entre-villes-logo.webp" alt="L'Entre Villes">
+          </a>
+        </div>
+        <div class="sponsor sponsor--wide">
+          <a href="https://notifyapp.cloud/" target="_blank" rel="noopener">
+            <img src="partner-notifyapp-logo.png" alt="NotifyApp">
           </a>
         </div>
       </div>
