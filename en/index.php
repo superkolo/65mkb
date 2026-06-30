@@ -96,7 +96,7 @@ include __DIR__ . '/header.php';
 <div class="event ktp">10:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/inwzWBLyRJT0lWUwBv6R" target="_blank" rel="noopener">VII Congress Pairs Tournament* for the Cup of the Sztum Bridge Supporters (3x10)</a></div>
 <div class="event team">16:15 <?php echo wynTC('Grand Prix Polski Teamów - semi-finals','t3','',''); ?></div>
 <div class="event ktp">17:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/FCLlKEogC05agEywHD0i" target="_blank" rel="noopener">VIII Congress Pairs Tournament* for the Cup of the President of Darles-Santerm Leszek Szkudlarek - Butler IMP Pairs (3x10)</a></div>
-<div class="event amateur">17:15 <a href="https://startowki.vuyap.com/tournament/register/4nvh/uqwYVIsmknbhjPwkUhhS" target="_blank" rel="noopener">III Amateur Pairs Tournament - Butler IMP Pairs</a></div>
+<div class="event amateur">17:15 <a href="https://startowki.vuyap.com/tournament/register/4nvh/uqwYVIsmknbhjPwkUhhS" target="_blank" rel="noopener">III Amateur Pairs Tournament - Butler IMP Pairs for the Cup of Wczasy Brydżowe Krzysztof Ziewacz</a></div>
 </div>
 
 <div class="day" id="day6">
@@ -105,7 +105,7 @@ include __DIR__ . '/header.php';
 <div class="event ktp">10:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/PWb0wUZFLmUJTNtXVIrq" target="_blank" rel="noopener">IX Congress Pairs Tournament* - Krzysztof “Generał” Eustachewicz Memorial (3x10)</a></div>
 <div class="event ktp">17:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/8Rv5uN3PM6BPZob3QGg8" target="_blank" rel="noopener">X Congress Pairs Tournament* - Mixed Pairs for the Cup of the Management Board of the Pomeranian Special Economic Zone (3x10)</a></div>
 <div class="event ktp">17:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/dU5jwQbpJUqLH6M9kdw1" target="_blank" rel="noopener">X Congress Pairs Tournament* (3x10)</a></div>
-<div class="event amateur">17:15 <a href="https://startowki.vuyap.com/tournament/register/4nvh/fbCPTEVGCYav5PDY2Gip" target="_blank" rel="noopener">IV Amateur Pairs Tournament</a></div>
+<div class="event amateur">17:15 <a href="https://startowki.vuyap.com/tournament/register/4nvh/fbCPTEVGCYav5PDY2Gip" target="_blank" rel="noopener">IV Amateur Pairs Tournament for the Cup of the President of the Gdańsk Bridge Society Kazimierz Dominiak</a></div>
 </div>
 
 <div class="day" id="day7">

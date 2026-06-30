@@ -99,7 +99,7 @@ include 'header.php';
 <div class="event ktp">10:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/inwzWBLyRJT0lWUwBv6R" target="_blank" rel="noopener">VII KTP* o Puchar Sympatyków Brydża ze Sztumu (3x10)</a></div>
 <div class="event team">16:15 <?php echo wynTC('GP Teamów – półfinały','t3','',''); ?></div>
 <div class="event ktp">17:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/FCLlKEogC05agEywHD0i" target="_blank" rel="noopener">VIII KTP* o Puchar Prezesa Darles-Santerm Leszka Szkudlarka - cav. uśr. (3x10)</a></div>
-<div class="event amateur">17:15 <a href="https://startowki.vuyap.com/tournament/register/4nvh/uqwYVIsmknbhjPwkUhhS" target="_blank" rel="noopener">III Turniej Par Amatorów - cav. uśr.</a></div>
+<div class="event amateur">17:15 <a href="https://startowki.vuyap.com/tournament/register/4nvh/uqwYVIsmknbhjPwkUhhS" target="_blank" rel="noopener">III Turniej Par Amatorów - cav. uśr. o Puchar Wczasów Brydżowych Krzysztofa Ziewacza</a></div>
 </div>
 
 <div class="day" id="day6">
@@ -108,7 +108,7 @@ include 'header.php';
 <div class="event ktp">10:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/PWb0wUZFLmUJTNtXVIrq" target="_blank" rel="noopener">IX KTP* - memoriał Krzysztofa “Generała” Eustachewicza (3x10)</a></div>
 <div class="event ktp">17:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/8Rv5uN3PM6BPZob3QGg8" target="_blank" rel="noopener">X KTP* - miksty o Puchar Zarządu Pomorskiej Specjalnej Strefy Ekonomicznej (3x10)</a></div>
 <div class="event ktp">17:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/dU5jwQbpJUqLH6M9kdw1" target="_blank" rel="noopener">X KTP* (3x10)</a></div>
-<div class="event amateur">17:15 <a href="https://startowki.vuyap.com/tournament/register/4nvh/fbCPTEVGCYav5PDY2Gip" target="_blank" rel="noopener">IV Turniej Par Amatorów</a></div>
+<div class="event amateur">17:15 <a href="https://startowki.vuyap.com/tournament/register/4nvh/fbCPTEVGCYav5PDY2Gip" target="_blank" rel="noopener">IV Turniej Par Amatorów o Puchar Prezesa Gdańskiego Towarzystwa Brydżowego Kazimierza Dominiaka</a></div>
 </div>
 
 <div class="day" id="day7">
