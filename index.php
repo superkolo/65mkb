@@ -248,6 +248,11 @@ include 'header.php';
             <img src="partner-notifyapp-logo.png" alt="NotifyApp">
           </a>
         </div>
+        <div class="sponsor sponsor--wide">
+          <a href="https://muzeumsopotu.pl/" target="_blank" rel="noopener">
+            <img src="partner-muzeum-sopotu-logo.svg" alt="Muzeum Sopotu">
+          </a>
+        </div>
       </div>
     </section>
 

@@ -161,6 +161,7 @@ include __DIR__ . '/header.php';
         <div class="sponsor sponsor--wide"><a href="https://mosirsopot.pl/" target="_blank" rel="noopener"><img src="../partner-mosir-sopot-logo.svg" alt="MOSiR Sopot"></a></div>
         <div class="sponsor sponsor--wide"><a href="https://entrevilles.pl/" target="_blank" rel="noopener"><img src="../partner-entre-villes-logo.webp" alt="L'Entre Villes"></a></div>
         <div class="sponsor sponsor--wide"><a href="https://notifyapp.cloud/" target="_blank" rel="noopener"><img src="../partner-notifyapp-logo.png" alt="NotifyApp"></a></div>
+        <div class="sponsor sponsor--wide"><a href="https://muzeumsopotu.pl/" target="_blank" rel="noopener"><img src="../partner-muzeum-sopotu-logo.svg" alt="Sopot Museum"></a></div>
       </div>
     </section>
 
