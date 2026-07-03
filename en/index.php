@@ -104,13 +104,13 @@ include __DIR__ . '/header.php';
 <div class="event team">09:30 <?php echo wynTC('Grand Prix Polski Teamów - final','t4','',''); ?></div>
 <div class="event ktp">10:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/PWb0wUZFLmUJTNtXVIrq" target="_blank" rel="noopener">IX Congress Pairs Tournament* - Krzysztof “Generał” Eustachewicz Memorial (3x10)</a></div>
 <div class="event ktp">17:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/8Rv5uN3PM6BPZob3QGg8" target="_blank" rel="noopener">X Congress Pairs Tournament* - Mixed Pairs for the Cup of the Management Board of the Pomeranian Special Economic Zone (3x10)</a></div>
-<div class="event ktp">17:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/dU5jwQbpJUqLH6M9kdw1" target="_blank" rel="noopener">X Congress Pairs Tournament* (3x10)</a></div>
+<div class="event ktp">17:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/dU5jwQbpJUqLH6M9kdw1" target="_blank" rel="noopener">X Congress Pairs Tournament* for the Cup of the President of Saaspine Sp. z o.o. (3x10)</a></div>
 <div class="event amateur">17:15 <a href="https://startowki.vuyap.com/tournament/register/4nvh/fbCPTEVGCYav5PDY2Gip" target="_blank" rel="noopener">IV Amateur Pairs Tournament for the Cup of the President of the Gdańsk Bridge Society Kazimierz Dominiak</a></div>
 </div>
 
 <div class="day" id="day7">
 <h3>30.07.2026, Thursday</h3>
-<div class="event ktp">10:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/ZgbGz9CyQM46vAYlQqk1" target="_blank" rel="noopener">XI Congress Pairs Tournament** (4x10)</a></div>
+<div class="event ktp">10:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/ZgbGz9CyQM46vAYlQqk1" target="_blank" rel="noopener">XI Congress Pairs Tournament** for the Cup of the Mayor of Gdańsk Aleksandra Dulkiewicz (4x10)</a></div>
 <div class="event">16:30 Congress closing ceremony</div>
 </div>
 </div>

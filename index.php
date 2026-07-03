@@ -107,13 +107,13 @@ include 'header.php';
 <div class="event team">09:30 <?php echo wynTC('GP Teamów - finał','t4','',''); ?></div>
 <div class="event ktp">10:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/PWb0wUZFLmUJTNtXVIrq" target="_blank" rel="noopener">IX KTP* - memoriał Krzysztofa “Generała” Eustachewicza (3x10)</a></div>
 <div class="event ktp">17:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/8Rv5uN3PM6BPZob3QGg8" target="_blank" rel="noopener">X KTP* - miksty o Puchar Zarządu Pomorskiej Specjalnej Strefy Ekonomicznej (3x10)</a></div>
-<div class="event ktp">17:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/dU5jwQbpJUqLH6M9kdw1" target="_blank" rel="noopener">X KTP* (3x10)</a></div>
+<div class="event ktp">17:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/dU5jwQbpJUqLH6M9kdw1" target="_blank" rel="noopener">X KTP* o Puchar Prezesa Saaspine Sp. z o.o. (3x10)</a></div>
 <div class="event amateur">17:15 <a href="https://startowki.vuyap.com/tournament/register/4nvh/fbCPTEVGCYav5PDY2Gip" target="_blank" rel="noopener">IV Turniej Par Amatorów o Puchar Prezesa Gdańskiego Towarzystwa Brydżowego Kazimierza Dominiaka</a></div>
 </div>
 
 <div class="day" id="day7">
 <h3>30.07.2026, czwartek</h3>
-<div class="event ktp">10:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/ZgbGz9CyQM46vAYlQqk1" target="_blank" rel="noopener">XI KTP** (4x10)</a></div>
+<div class="event ktp">10:00 <a href="https://startowki.vuyap.com/tournament/register/4nvh/ZgbGz9CyQM46vAYlQqk1" target="_blank" rel="noopener">XI KTP** o Puchar Prezydentki Gdańska Aleksandry Dulkiewicz (4x10)</a></div>
 <div class="event">16:30 Ceremonia zakończenia Kongresu</div>
 </div></div>
 
