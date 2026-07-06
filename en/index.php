@@ -39,6 +39,7 @@ include __DIR__ . '/header.php';
   <strong>10:00 World record attempt</strong>
   <span>The largest number of boards played during a 48-hour bridge match.</span>
   <em>Venue: in front of the entrance to the Sopot Pier.</em>
+  <a class="event__cta event__cta--record" href="https://world-record-registration.vercel.app/" target="_blank" rel="noopener">Register for the world record attempt</a>
 </div>
 </div>
 
