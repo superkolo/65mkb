@@ -10,6 +10,7 @@ include 'header.php';
 <h2>Komitet organizacyjny</h2>
 <ul>
   <li>Andrzej Twardowski</li>
+  <li>Andrzej Jarząbkowski</li>
   <li>Robert Krawczyk</li>
   <li>Marta Kondraciuk</li>
 </ul>

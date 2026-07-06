@@ -10,6 +10,7 @@ Congress Director: <a target="_blank" href="https://msc.com.pl/cezar/?p=21&pid=4
 <h2>Organising Committee</h2>
 <ul>
   <li>Andrzej Twardowski</li>
+  <li>Andrzej Jarząbkowski</li>
   <li>Robert Krawczyk</li>
   <li>Marta Kondraciuk</li>
 </ul>
