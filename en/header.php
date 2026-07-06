@@ -8,6 +8,18 @@ $polishHref = ($currentPage === 'index.php') ? '../' : '../' . $currentPage;
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?php echo $title; ?> - 65th International Baltic Congress</title>
+<meta name="description" content="65th International Baltic Congress in Sopot, 22-30 July 2026.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="65th International Baltic Congress">
+<meta property="og:title" content="<?php echo htmlspecialchars($title, ENT_QUOTES); ?> - 65th International Baltic Congress">
+<meta property="og:description" content="Sopot, 22-30 July 2026. Hala Stulecia, ul. Goyki 7.">
+<meta property="og:image" content="https://sopotbridge.pl/og-image.png">
+<meta property="og:image:secure_url" content="https://sopotbridge.pl/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://sopotbridge.pl/og-image.png">
 <link rel="stylesheet" href="../style.css?t=<?php echo filemtime(__DIR__ . '/../style.css'); ?>">
 </head>
 <body>
