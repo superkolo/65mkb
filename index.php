@@ -76,7 +76,7 @@ include 'header.php';
 </div>
 <div class="event special event--film">
   <span class="event__badge">Premiera</span>
-  <strong>17:00 Premiera filmu dokumentalnego o Kongresie Bałtyckim</strong>
+  <strong>17:00 Premiera filmu dokumentalnego „Bałtycki Wist”</strong>
   <span>Reżyseria: <em>Konrad Kulczyński</em></span>
 </div>
 <div class="event ktp">17:30 <a href="https://startowki.vuyap.com/tournament/register/4nvh/q44b5K58fQEek1jrKzPW" target="_blank" rel="noopener">IV KTP** o Puchar Prezesa Trefl S.A.</a></div>

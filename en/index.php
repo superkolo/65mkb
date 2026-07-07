@@ -73,7 +73,7 @@ include __DIR__ . '/header.php';
 </div>
 <div class="event special event--film">
   <span class="event__badge">Premiere</span>
-  <strong>17:00 Premiere of the documentary film about the Baltic Congress</strong>
+  <strong>17:00 Premiere of the documentary film “Bałtycki Wist”</strong>
   <span>Directed by: <em>Konrad Kulczyński</em></span>
 </div>
 <div class="event ktp">17:30 <a href="https://startowki.vuyap.com/tournament/register/4nvh/q44b5K58fQEek1jrKzPW" target="_blank" rel="noopener">IV Congress Pairs Tournament** for the Cup of the President of Trefl S.A.</a></div>
