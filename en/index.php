@@ -162,11 +162,13 @@ include __DIR__ . '/header.php';
       <div class="partners__logos">
         <div class="sponsor sponsor--wide"><a href="https://muzeumsopotu.pl/" target="_blank" rel="noopener"><img src="../partner-muzeum-sopotu-logo.svg" alt="Sopot Museum"></a></div>
         <div class="sponsor sponsor--partner"><a href="https://pg.edu.pl/" target="_blank" rel="noopener"><img src="../partner-pg-logo.png" alt="Gdańsk University of Technology"></a></div>
+        <div class="sponsor sponsor--wide"><a href="https://mosirsopot.pl/" target="_blank" rel="noopener"><img src="../partner-mosir-sopot-logo.svg" alt="MOSiR Sopot"></a></div>
         <div class="sponsor sponsor--wide"><a href="https://fisherman.com.pl/" target="_blank" rel="noopener"><img src="../partner-fisherman-logo.png" alt="Fisherman Restaurant"></a></div>
         <div class="sponsor sponsor--wide"><a href="https://entrevilles.pl/" target="_blank" rel="noopener"><img src="../partner-entre-villes-logo.webp" alt="L'Entre Villes"></a></div>
         <div class="sponsor sponsor--wide"><a href="https://www.posnet.com.pl/" target="_blank" rel="noopener"><img src="../partner-posnet-logo.png" alt="POSNET"></a></div>
         <div class="sponsor sponsor--wide"><a href="https://iiyama.com/" target="_blank" rel="noopener"><img src="../partner-iiyama-logo.svg" alt="iiyama"></a></div>
         <div class="sponsor sponsor--wide"><a href="https://notifyapp.cloud/" target="_blank" rel="noopener"><img src="../partner-notifyapp-logo.png" alt="NotifyApp"></a></div>
+        <div class="sponsor sponsor--wide"><a href="https://fundacja.trefl.com/muzeum-kart/" target="_blank" rel="noopener"><img src="../partner-muzeum-kart-logo.jpg" alt="Playing Card Museum Ulica Brydżowa"></a></div>
       </div>
     </section>
 

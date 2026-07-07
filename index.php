@@ -226,6 +226,11 @@ include 'header.php';
           </a>
         </div>
         <div class="sponsor sponsor--wide">
+          <a href="https://mosirsopot.pl/" target="_blank" rel="noopener">
+            <img src="partner-mosir-sopot-logo.svg" alt="MOSiR Sopot">
+          </a>
+        </div>
+        <div class="sponsor sponsor--wide">
           <a href="https://fisherman.com.pl/" target="_blank" rel="noopener">
             <img src="partner-fisherman-logo.png" alt="Fisherman Restaurant">
           </a>
@@ -248,6 +253,11 @@ include 'header.php';
         <div class="sponsor sponsor--wide">
           <a href="https://notifyapp.cloud/" target="_blank" rel="noopener">
             <img src="partner-notifyapp-logo.png" alt="NotifyApp">
+          </a>
+        </div>
+        <div class="sponsor sponsor--wide">
+          <a href="https://fundacja.trefl.com/muzeum-kart/" target="_blank" rel="noopener">
+            <img src="partner-muzeum-kart-logo.jpg" alt="Muzeum Kart do Gry Ulica Brydżowa">
           </a>
         </div>
       </div>
