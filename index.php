@@ -127,7 +127,7 @@ include 'header.php';
       <div class="partners__logos">
         <div class="sponsor sponsor--partner">
           <a href="https://www.sopot.pl/" target="_blank" rel="noopener">
-            <img src="partner-herb.png" alt="Prezydent Miasta Sopotu">
+            <img src="partner-sopot-patronat.svg" alt="Patronat Honorowy Prezydentki Miasta Sopotu">
           </a>
         </div>
         <div class="sponsor sponsor--partner sponsor--wt">
@@ -141,60 +141,9 @@ include 'header.php';
     <section class="partners__group">
       <h3>Sponsorzy</h3>
       <div class="partners__logos">
-        <div class="sponsor sponsor--partner sponsor--trefl">
-          <a href="https://trefl.com/" target="_blank" rel="noopener">
-            <img src="sponsor-trefl.svg" alt="Trefl S.A.">
-          </a>
-        </div>
-        <div class="sponsor sponsor--wide">
-          <a href="https://www.strefa.gda.pl/" target="_blank" rel="noopener">
-            <img src="sponsor-psse.png" alt="Pomorska Specjalna Strefa Ekonomiczna">
-          </a>
-        </div>
         <div class="sponsor sponsor--wide">
           <a href="https://pomorskie.eu/" target="_blank" rel="noopener">
             <img src="sponsor-pomorskie.png" alt="Urząd Marszałkowski Województwa Pomorskiego">
-          </a>
-        </div>
-        <div class="sponsor sponsor--partner">
-          <a href="https://gdyniasport.pl/" target="_blank" rel="noopener">
-            <img src="sponsor-gdynia-sport.png" alt="Gdyńskie Centrum Sportu">
-          </a>
-        </div>
-        <div class="sponsor sponsor--partner">
-          <a href="https://www.wczasybrydzowe.pl/" target="_blank" rel="noopener">
-            <img src="sponsor-wczasy-brydzowe.png" alt="Wczasy Brydżowe">
-          </a>
-        </div>
-        <div class="sponsor sponsor--wide">
-          <a href="https://wakacyjnepomysly.pl/" target="_blank" rel="noopener">
-            <img src="sponsor-wakacyjnepomysly.svg" alt="wakacyjnepomysly.pl">
-          </a>
-        </div>
-        <div class="sponsor sponsor--partner">
-          <a href="https://www.wawabrydz.pl/" target="_blank" rel="noopener">
-            <img src="sponsor-wawabrydz.jpg" alt="WawaBrydż">
-          </a>
-        </div>
-        <div class="sponsor sponsor--partner">
-          <a href="https://oknaboniek.pl/" target="_blank" rel="noopener">
-            <img src="sponsor-okna-boniek.jpg" alt="Okna Boniek">
-          </a>
-        </div>
-        <div class="sponsor sponsor--wide">
-          <a href="https://saaspine.com/" target="_blank" rel="noopener">
-            <img src="sponsor-saaspine.svg" alt="SaaSpine">
-          </a>
-        </div>
-        <div class="sponsor sponsor--partner sponsor--text">
-          <span>Marek Koczerga</span>
-        </div>
-        <div class="sponsor sponsor--partner sponsor--text">
-          <span>Witold Kaliński</span>
-        </div>
-        <div class="sponsor sponsor--partner">
-          <a href="http://www.darles.pl/" target="_blank" rel="noopener">
-            <img src="sponsor-darles-santerm.gif" alt="Darles-Santerm">
           </a>
         </div>
         <div class="sponsor sponsor--gdansk">
@@ -203,20 +152,81 @@ include 'header.php';
             <span>Dofinansowano ze środków Miasta Gdańska</span>
           </a>
         </div>
+        <div class="sponsor sponsor--partner">
+          <a href="https://gdyniasport.pl/" target="_blank" rel="noopener">
+            <img src="sponsor-gdynia-sport.png" alt="Gdyńskie Centrum Sportu">
+          </a>
+        </div>
+        <div class="sponsor sponsor--partner">
+          <a href="https://www.wawabrydz.pl/" target="_blank" rel="noopener">
+            <img src="sponsor-wawabrydz.jpg" alt="WawaBrydż">
+          </a>
+        </div>
+        <div class="sponsor sponsor--partner">
+          <a href="https://www.wczasybrydzowe.pl/" target="_blank" rel="noopener">
+            <img src="sponsor-wczasy-brydzowe.png" alt="Wczasy Brydżowe">
+          </a>
+        </div>
+        <div class="sponsor sponsor--partner">
+          <a href="http://www.darles.pl/" target="_blank" rel="noopener">
+            <img src="sponsor-darles-santerm.gif" alt="Darles-Santerm">
+          </a>
+        </div>
+        <div class="sponsor sponsor--partner sponsor--trefl">
+          <a href="https://trefl.com/" target="_blank" rel="noopener">
+            <img src="sponsor-trefl.svg" alt="Trefl S.A.">
+          </a>
+        </div>
+        <div class="sponsor sponsor--partner">
+          <a href="https://oknaboniek.pl/" target="_blank" rel="noopener">
+            <img src="sponsor-okna-boniek.jpg" alt="Okna Boniek">
+          </a>
+        </div>
+        <div class="sponsor sponsor--wide">
+          <a href="https://www.strefa.gda.pl/" target="_blank" rel="noopener">
+            <img src="sponsor-psse.png" alt="Pomorska Specjalna Strefa Ekonomiczna">
+          </a>
+        </div>
+        <div class="sponsor sponsor--wide">
+          <a href="https://wakacyjnepomysly.pl/" target="_blank" rel="noopener">
+            <img src="sponsor-wakacyjnepomysly.svg" alt="wakacyjnepomysly.pl">
+          </a>
+        </div>
+        <div class="sponsor sponsor--wide">
+          <a href="https://saaspine.com/" target="_blank" rel="noopener">
+            <img src="sponsor-saaspine.svg" alt="SaaSpine">
+          </a>
+        </div>
+        <div class="sponsor sponsor--partner sponsor--text">
+          <span>Witold Kaliński</span>
+        </div>
+        <div class="sponsor sponsor--partner sponsor--text">
+          <span>Marek Koczerga</span>
+        </div>
       </div>
     </section>
 
     <section class="partners__group">
       <h3>Partnerzy</h3>
       <div class="partners__logos">
+        <div class="sponsor sponsor--wide">
+          <a href="https://muzeumsopotu.pl/" target="_blank" rel="noopener">
+            <img src="partner-muzeum-sopotu-logo.svg" alt="Muzeum Sopotu">
+          </a>
+        </div>
         <div class="sponsor sponsor--partner">
           <a href="https://pg.edu.pl/" target="_blank" rel="noopener">
-            <img src="partner-pg-logo.svg" alt="Politechnika Gdańska">
+            <img src="partner-pg-logo.png" alt="Politechnika Gdańska">
           </a>
         </div>
         <div class="sponsor sponsor--wide">
-          <a href="https://fundacja.trefl.com/muzeum-kart/" target="_blank" rel="noopener">
-            <img src="partner-muzeum-kart-logo.svg" alt="Muzeum Kart do Gry Ulica Brydżowa">
+          <a href="https://fisherman.com.pl/" target="_blank" rel="noopener">
+            <img src="partner-fisherman-logo.png" alt="Fisherman Restaurant">
+          </a>
+        </div>
+        <div class="sponsor sponsor--wide">
+          <a href="https://entrevilles.pl/" target="_blank" rel="noopener">
+            <img src="partner-entre-villes-logo.webp" alt="L'Entre Villes">
           </a>
         </div>
         <div class="sponsor sponsor--wide">
@@ -230,28 +240,8 @@ include 'header.php';
           </a>
         </div>
         <div class="sponsor sponsor--wide">
-          <a href="https://fisherman.com.pl/" target="_blank" rel="noopener">
-            <img src="partner-fisherman-logo.png" alt="Fisherman Restaurant">
-          </a>
-        </div>
-        <div class="sponsor sponsor--wide">
-          <a href="https://mosirsopot.pl/" target="_blank" rel="noopener">
-            <img src="partner-mosir-sopot-logo.svg" alt="MOSiR Sopot">
-          </a>
-        </div>
-        <div class="sponsor sponsor--wide">
-          <a href="https://entrevilles.pl/" target="_blank" rel="noopener">
-            <img src="partner-entre-villes-logo.webp" alt="L'Entre Villes">
-          </a>
-        </div>
-        <div class="sponsor sponsor--wide">
           <a href="https://notifyapp.cloud/" target="_blank" rel="noopener">
             <img src="partner-notifyapp-logo.png" alt="NotifyApp">
-          </a>
-        </div>
-        <div class="sponsor sponsor--wide">
-          <a href="https://muzeumsopotu.pl/" target="_blank" rel="noopener">
-            <img src="partner-muzeum-sopotu-logo.svg" alt="Muzeum Sopotu">
           </a>
         </div>
       </div>
