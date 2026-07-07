@@ -69,7 +69,13 @@ include __DIR__ . '/header.php';
 <div class="event special event--panel">
   <span class="event__badge">Panel discussion</span>
   <strong>16:30 Sport is also culture - why should we remember sporting heritage?</strong>
-  <span>With invited guests</span>
+  <span>With invited guests:</span>
+  <ul class="event__guests">
+    <li>Karolina Babicz-Kaczmarek <span>Director of the Sopot Museum</span></li>
+    <li>Maja Wagner <span>Head of the Culture Department, Gdynia City Hall</span></li>
+    <li>Kazimierz Wierzbicki <span>President of Trefl SA</span></li>
+    <li>Andrzej Twardowski <span>President of the Pomeranian Voivodeship Sports Bridge Association</span></li>
+  </ul>
 </div>
 <div class="event special event--film">
   <span class="event__badge">Premiere</span>

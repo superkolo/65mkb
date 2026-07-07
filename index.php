@@ -72,7 +72,13 @@ include 'header.php';
 <div class="event special event--panel">
   <span class="event__badge">Panel dyskusyjny</span>
   <strong>16:30 Sport to też kultura - dlaczego warto pamiętać o sportowym dziedzictwie?</strong>
-  <span>Z udziałem zaproszonych gości</span>
+  <span>Z udziałem zaproszonych gości:</span>
+  <ul class="event__guests">
+    <li>Karolina Babicz-Kaczmarek <span>dyrektor Muzeum Sopotu</span></li>
+    <li>Maja Wagner <span>naczelnik Wydziału Kultury UM Gdynia</span></li>
+    <li>Kazimierz Wierzbicki <span>prezes Trefl SA</span></li>
+    <li>Andrzej Twardowski <span>prezes Pomorskiego Wojewódzkiego Związku Brydża Sportowego</span></li>
+  </ul>
 </div>
 <div class="event special event--film">
   <span class="event__badge">Premiera</span>
