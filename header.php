@@ -6,6 +6,20 @@ $englishHref = ($currentPage === 'index.php') ? 'en/' : 'en/' . $currentPage;
 <html lang="pl" >
 <head>
 <meta charset="UTF-8">
+
+	<!-- realfavicongenerator.net generated favicon code -->
+	<link rel="apple-touch-icon" sizes="180x180" href="_favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="_favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="_favicon/favicon-16x16-2.png">
+	<link rel="manifest" href="_favicon/manifest.json"> 
+	<link rel="mask-icon" href="_favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="_favicon/favicon.ico">
+	<meta name="apple-mobile-web-app-title" content="Kongres Bałtycki">
+	<meta name="application-name" content="Kongres Bałtycki">
+	<meta name="msapplication-config" content="_favicon/browserconfig.xml">
+	<meta name="theme-color" content="#038fb2"> 	
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?php echo $title; ?> - 65. Międzynarodowy Kongres Bałtycki</title>
 <meta name="description" content="65. Międzynarodowy Kongres Bałtycki w Sopocie, 22-30 lipca 2026.">
@@ -21,6 +35,7 @@ $englishHref = ($currentPage === 'index.php') ? 'en/' : 'en/' . $currentPage;
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://wyniki.pzbs.pl/2026/baltycki/og-image.png">
 <link rel="stylesheet" href="style.css?t=<?php echo filemtime(__DIR__ . '/style.css'); ?>">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 

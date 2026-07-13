@@ -86,7 +86,7 @@ include 'header.php';
   <ol class="entry-fees__notes">
     <li>Dla osób z opłaconą bieżącą składką PZBS oraz młodzieży zagranicznej. Ulga od 66 lat dotyczy wyłącznie turniejów GPPP i GPPT. Nie dotyczy turniejów amatorskich.</li>
     <li>W turniejach z cyklu GPPP oraz GPPT prawo startu mają wyłącznie zawodnicy z opłaconą bieżącą składką PZBS oraz zawodnicy zagraniczni z opłaconą składką w zagranicznej federacji.</li>
-    <li>Wysokość wpisowego do kolejnych etapów GPPT wynosi 200 zł od teamu. Przez etap rozumiemy rozgrywki na dystansie 24-36 rozdań, a nie krótki mecz play-off. Dopłaty za poszczególne etapy wchodzą w całości do ogólnej kwoty wpisowego.</li>
+    <li>W fazie play-off GPPT wpisowe wynosi 200 zł od teamu do każdego meczu.</li>
     <li>Uprawnieni do udziału w turnieju są amatorzy, tzn. gracze niezrzeszeni w PZBS lub zrzeszeni w PZBS o WK nie przekraczającym 1.5.</li>
     <li>Nagrody będą wypłacane przelewem.</li>
     <li>Zawodnicy z Rosji i Białorusi niezrzeszeni w PZBS nie zostaną dopuszczeni do gry. Pozostali zawodnicy zagraniczni płacą wpisowe jak członkowie PZBS, z tym że owi zawodnicy muszą być zarejestrowani w swoim macierzystym związku brydżowym.</li>

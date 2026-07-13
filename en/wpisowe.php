@@ -86,7 +86,7 @@ include __DIR__ . '/header.php';
   <ol class="entry-fees__notes">
     <li>For players with a paid current PZBS membership fee and for foreign youth players. The discount from 66 years of age applies only to GPPP and GPPT events. This does not apply to amateur tournaments.</li>
     <li>In GPPP and GPPT events, only players with a paid current PZBS membership fee and foreign players with a paid membership fee in their national bridge federation may participate.</li>
-    <li>The entry fee for each subsequent GPPT stage is 200 PLN per team. A stage means play over 24-36 boards, not a short play-off match. Payments for individual stages are included in full in the total entry fee amount.</li>
+    <li>In the GPPT play-off stage, the entry fee is PLN 200 per team for each match.</li>
     <li>Amateur tournaments are open to amateur players, i.e. players not affiliated with PZBS or PZBS players whose WK does not exceed 1.5.</li>
     <li>Prizes will be paid by bank transfer.</li>
     <li>Unaffiliated players from Russia and Belarus will not be admitted to play. Other foreign players pay the same entry fees as PZBS members, provided that they are registered with their home bridge federation.</li>
