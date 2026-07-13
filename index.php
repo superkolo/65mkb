@@ -59,7 +59,7 @@ include 'header.php';
 
 <div class="day" id="day1">
 <h3>24.07.2026, piątek</h3>
-<div class="event ktp">10:00 <?php echo wyntc('I KTP* o Puchar Rektora Politechniki Gdańskiej (3x10)','k1/#wjeneojwvn',0, 'https://startowki.vuyap.com/tournament/register/4nvh/jYbSU7HnGMq6Uql4lAYF'); ?></div>
+<div class="event ktp">10:00 <?php echo wyntc('I KTP* o Puchar Rektora Politechniki Gdańskiej (3x10)','k1',0, 'https://startowki.vuyap.com/tournament/register/4nvh/jYbSU7HnGMq6Uql4lAYF'); ?></div>
 <div class="event youth">10:15 <?php echo wynTC('Turniej Młodzieżowy - Indywiduel','y1',0,''); ?></div>
 
 <div class="event ktp">17:00 <?php echo wyntc('II KTP* - Memoriał Honorowego Prezesa PWZBS Andrzeja Zaleskiego (3x10)','k2',0,'https://startowki.vuyap.com/tournament/register/4nvh/MA5PQXb1GvjXY2U1Ce6W'); ?></div>
