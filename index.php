@@ -210,6 +210,9 @@ include 'header.php';
         <div class="sponsor sponsor--partner sponsor--text">
           <span>Marek Koczerga</span>
         </div>
+        <div class="sponsor sponsor--wide">
+          <img src="sponsor-zui.png" alt="ZUI Sztum Z. Koza Sp.k.">
+        </div>
       </div>
     </section>
 

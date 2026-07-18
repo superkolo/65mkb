@@ -154,6 +154,7 @@ include __DIR__ . '/header.php';
         <div class="sponsor sponsor--wide"><a href="https://saaspine.com/" target="_blank" rel="noopener"><img src="../sponsor-saaspine.svg" alt="SaaSpine"></a></div>
         <div class="sponsor sponsor--partner sponsor--text"><span>Witold Kaliński</span></div>
         <div class="sponsor sponsor--partner sponsor--text"><span>Marek Koczerga</span></div>
+        <div class="sponsor sponsor--wide"><img src="../sponsor-zui.png" alt="ZUI Sztum Z. Koza Sp.k."></div>
       </div>
     </section>
 
