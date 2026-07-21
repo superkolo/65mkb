@@ -86,7 +86,7 @@ include __DIR__ . '/header.php';
   <section class="rules__section">
     <h3>VI. Prizes and points</h3>
     <ol>
-      <li>The tournament prize fund is at least 50% of entry fees.</li>
+      <li>The tournament prize fund is at least 40% of entry fees.</li>
       <li>Financial prizes are paid to the team captain.</li>
       <li>GPPT long-term points are awarded according to the central PZBS regulations.</li>
       <li>A player receives GPPT points provided they play the minimum number of boards required by the central regulations.</li>

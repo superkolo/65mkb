@@ -86,7 +86,7 @@ include 'header.php';
   <section class="rules__section">
     <h3>VI. Nagrody i punkty</h3>
     <ol>
-      <li>Fundusz nagród turnieju stanowi co najmniej 50% wpisowego.</li>
+      <li>Fundusz nagród turnieju stanowi co najmniej 40% wpisowego.</li>
       <li>Nagrody finansowe wypłacane są kapitanowi drużyny.</li>
       <li>Punkty długofalowe GPPT przyznawane są zgodnie z regulaminem centralnym PZBS.</li>
       <li>Zawodnik otrzymuje punkty GPPT pod warunkiem rozegrania minimalnej liczby rozdań wymaganej regulaminem centralnym.</li>
