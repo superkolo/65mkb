@@ -1,0 +1,262 @@
+var INVITATION_CONFIG = {
+  EMAIL_COLUMN: 1,      // A
+  STATUS_COLUMN: 3,     // C
+  GREETING_COLUMN: 4,   // D
+  HEADER_ROWS: 1,
+  MAX_PER_RUN: 200,
+  SENT_STATUS: "Wysłano",
+  SENDER_NAME: "Michał Górski",
+  REPLY_TO: "michal.gorski@bridge.gda.pl",
+  SUBJECT: "Zaproszenie na debatę i premierę filmu „Bałtycki Wist”"
+};
+
+function sendInvitations() {
+  var lock = LockService.getScriptLock();
+  if (!lock.tryLock(30000)) {
+    Logger.log("Inne uruchomienie skryptu nadal trwa. Kończę.");
+    return;
+  }
+
+  try {
+    var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+    var lastRow = sheet.getLastRow();
+    if (lastRow <= INVITATION_CONFIG.HEADER_ROWS) {
+      Logger.log("Brak danych do wysyłki.");
+      stopInvitationBatches();
+      return;
+    }
+
+    var remainingQuota = MailApp.getRemainingDailyQuota();
+    Logger.log("Pozostały dzienny limit odbiorców: " + remainingQuota);
+
+    if (remainingQuota <= 0) {
+      Logger.log("Brak dziennego limitu wysyłki. Spróbuj ponownie po odnowieniu limitu.");
+      return;
+    }
+
+    var maxToSend = Math.min(INVITATION_CONFIG.MAX_PER_RUN, remainingQuota);
+    var range = sheet.getRange(
+      INVITATION_CONFIG.HEADER_ROWS + 1,
+      1,
+      lastRow - INVITATION_CONFIG.HEADER_ROWS,
+      Math.max(
+        INVITATION_CONFIG.EMAIL_COLUMN,
+        INVITATION_CONFIG.STATUS_COLUMN,
+        INVITATION_CONFIG.GREETING_COLUMN
+      )
+    );
+    var data = range.getValues();
+    var sentCount = 0;
+    var pendingCount = 0;
+
+    for (var i = 0; i < data.length; i++) {
+      var rowNumber = i + INVITATION_CONFIG.HEADER_ROWS + 1;
+      var row = data[i];
+      var emailAddress = String(row[INVITATION_CONFIG.EMAIL_COLUMN - 1] || "").trim();
+      var status = String(row[INVITATION_CONFIG.STATUS_COLUMN - 1] || "").trim();
+      var personalizedGreeting = String(row[INVITATION_CONFIG.GREETING_COLUMN - 1] || "Szanowni Państwo").trim();
+
+      if (!emailAddress || status === INVITATION_CONFIG.SENT_STATUS) {
+        continue;
+      }
+
+      pendingCount++;
+
+      if (sentCount >= maxToSend) {
+        continue;
+      }
+
+      if (!isValidEmailAddress_(emailAddress)) {
+        sheet.getRange(rowNumber, INVITATION_CONFIG.STATUS_COLUMN).setValue("Błąd: nieprawidłowy adres e-mail");
+        Logger.log("Nieprawidłowy adres e-mail w wierszu " + rowNumber + ": " + emailAddress);
+        continue;
+      }
+
+      try {
+        MailApp.sendEmail({
+          to: emailAddress,
+          subject: INVITATION_CONFIG.SUBJECT,
+          body: buildPlainTextBody_(personalizedGreeting),
+          htmlBody: buildHtmlBody_(personalizedGreeting),
+          name: INVITATION_CONFIG.SENDER_NAME,
+          replyTo: INVITATION_CONFIG.REPLY_TO
+        });
+
+        sheet.getRange(rowNumber, INVITATION_CONFIG.STATUS_COLUMN).setValue(INVITATION_CONFIG.SENT_STATUS);
+        sentCount++;
+        Logger.log("Wysłano " + sentCount + "/" + maxToSend + ": " + emailAddress);
+
+        if (sentCount % 25 === 0) {
+          SpreadsheetApp.flush();
+        }
+      } catch (e) {
+        sheet.getRange(rowNumber, INVITATION_CONFIG.STATUS_COLUMN).setValue("Błąd: " + e.toString());
+        Logger.log("Błąd podczas wysyłania do " + emailAddress + ": " + e.toString());
+      }
+    }
+
+    SpreadsheetApp.flush();
+    Logger.log("Wysłano w tym uruchomieniu: " + sentCount);
+
+    if (pendingCount === 0 || sentCount === 0 && pendingCount <= maxToSend) {
+      Logger.log("Brak kolejnych wiadomości do wysłania albo pozostały tylko błędne rekordy.");
+      stopInvitationBatches();
+    }
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+function scheduleInvitationBatches() {
+  stopInvitationBatches();
+
+  ScriptApp.newTrigger("sendInvitations")
+    .timeBased()
+    .everyMinutes(10)
+    .create();
+
+  Logger.log("Utworzono trigger: sendInvitations co 10 minut.");
+}
+
+function stopInvitationBatches() {
+  var triggers = ScriptApp.getProjectTriggers();
+  for (var i = 0; i < triggers.length; i++) {
+    if (triggers[i].getHandlerFunction() === "sendInvitations") {
+      ScriptApp.deleteTrigger(triggers[i]);
+    }
+  }
+}
+
+function checkInvitationQuota() {
+  Logger.log("Pozostały dzienny limit odbiorców: " + MailApp.getRemainingDailyQuota());
+}
+
+function isValidEmailAddress_(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+function escapeHtml_(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+function buildPlainTextBody_(personalizedGreeting) {
+  return personalizedGreeting + "\n\n" +
+    "w imieniu organizatorów 65. Międzynarodowego Kongresu Bałtyckiego mamy zaszczyt zaprosić Państwa na debatę „Sport to też kultura - dlaczego warto pamiętać o sportowym dziedzictwie?” oraz na premierę filmu dokumentalnego „Bałtycki Wist” w reżyserii Konrada Kulczyńskiego.\n\n" +
+    "Data: 25 lipca 2026 r., sobota\n" +
+    "Debata: 16:30\n" +
+    "Premiera filmu: 17:00\n" +
+    "Miejsce: Hala Stulecia Sopotu, ul. Jakuba Goyki 7, 81-715 Sopot\n\n" +
+    "Z wyrazami szacunku,\n" +
+    "Michał Górski\n" +
+    "Dyrektor Międzynarodowego Kongresu Bałtyckiego w Brydżu Sportowym\n\n" +
+    "sopotbridge.pl";
+}
+
+function buildHtmlBody_(personalizedGreeting) {
+  var greeting = escapeHtml_(personalizedGreeting || "Szanowni Państwo");
+
+  return `<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zaproszenie na debatę i premierę - 65. MKB</title>
+</head>
+<body style="margin:0;padding:0;background:#f5f7f8;color:#232323;font-family:Arial,Helvetica,sans-serif;">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#f5f7f8;margin:0;padding:0;">
+    <tr>
+      <td align="center" style="padding:28px 14px;">
+        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="max-width:720px;background:#ffffff;border:1px solid #d8e4e8;border-radius:8px;overflow:hidden;">
+          <tr>
+            <td style="background:#ffffff;border-top:8px solid #2396ad;padding:28px 30px 22px;text-align:center;">
+              <div style="display:inline-block;width:92px;max-width:92px;margin:0 auto 16px;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.02 244.84" width="92" height="106" role="img" aria-label="Logo 65. Międzynarodowego Kongresu Bałtyckiego">
+                  <defs><style>.a{fill:#008ea8;}.b,.c,.d{fill-rule:evenodd;}.c{fill:#bf151b;}.d{fill:#231f20;}</style></defs>
+                  <path class="a" d="M197.4,140.4a25.59,25.59,0,1,1-51.18,0H131.6a25.59,25.59,0,1,1-51.18,0H65.8A25.62,25.62,0,0,1,40.21,166h0A25.62,25.62,0,0,1,14.62,140.4H0a40.19,40.19,0,0,0,73.11,23.08,40.15,40.15,0,0,0,65.8,0A40.19,40.19,0,0,0,212,140.4Z"/>
+                  <path class="a" d="M197.4,12.22a25.59,25.59,0,1,1-51.18,0H131.6a25.59,25.59,0,1,1-51.18,0H65.8A25.62,25.62,0,0,1,40.21,37.81h0A25.62,25.62,0,0,1,14.62,12.22H0A40.19,40.19,0,0,0,73.11,35.3a40.16,40.16,0,0,0,65.8,0A40.19,40.19,0,0,0,212,12.22Z"/>
+                  <path class="a" d="M197.4,76.62a25.59,25.59,0,1,1-51.18,0H131.6a25.59,25.59,0,1,1-51.18,0H65.8a25.62,25.62,0,0,1-25.59,25.59h0A25.62,25.62,0,0,1,14.62,76.62H0A40.19,40.19,0,0,0,73.11,99.7a40.15,40.15,0,0,0,65.8,0A40.19,40.19,0,0,0,212,76.62Z"/>
+                  <path class="a" d="M197.4,204.63a25.59,25.59,0,1,1-51.18,0H131.6a25.59,25.59,0,1,1-51.18,0H65.8a25.59,25.59,0,1,1-51.18,0H0a40.19,40.19,0,0,0,73.11,23.08,40.15,40.15,0,0,0,65.8,0A40.19,40.19,0,0,0,212,204.63Z"/>
+                  <path class="b" d="M165.91,204.47a26.24,26.24,0,0,1-2.78-4.5c-1.7-4.56,1.08-8.83,6.23-9.46a13.76,13.76,0,0,1,5.85.58c5.16,1.73,6.57,7.6,3,11.71a10.92,10.92,0,0,0-1.16,1.44c4.93-1.92,8.66-1.23,10.78,2.05s1.54,8.62-1,11.13c-3,3-7.73,2.72-12.44-.64-1.14,1.73-.93,2.62,2.25,9.1h-9.15c1.62-2.8,3.62-5.5,2.09-9.25-2.47,2.38-5.31,3.56-8.48,2.69a11,11,0,0,1-4.58-2.64c-2.48-2.43-2.64-7.78-.62-10.63C158.11,202.92,161.07,202.46,165.91,204.47Z"/>
+                  <path class="c" d="M40.18,32.33c-4.36-4.54-8.76-8.85-12.84-13.45-2.71-3.06-4.54-6.68-4-11C23.94,3.65,27.1.5,30.92.33c4.7-.21,7.8,2.19,8.8,6.8a4.18,4.18,0,0,0,.72,1.78c.12-.52.28-1,.36-1.57C41.48,3.09,45.13-.21,48.94,0a8.66,8.66,0,0,1,8.2,8.35c.2,4.61-2,8.29-4.89,11.49C48.37,24.08,44.28,28.11,40.18,32.33Z"/>
+                  <path class="d" d="M171.54,59.68c3.46,3.48,6.83,6.93,10.26,10.3,2.75,2.7,5.17,5.54,5.91,9.5A8.78,8.78,0,0,1,184,88.59c-2.94,1.89-6,1.64-9.19-.75a5.81,5.81,0,0,0-.76-.38c-.94,3.64.78,6.37,2.71,9.26h-9.51c1.84-2.75,3.42-5.57,2.33-9a23.49,23.49,0,0,1-4.35,1.72c-5.8,1-10.36-3.8-9.35-9.64a14.52,14.52,0,0,1,3.89-7.61c3.27-3.47,6.63-6.86,9.92-10.31C170.42,61.16,171.05,60.27,171.54,59.68Z"/>
+                  <path class="c" d="M40.17,160.73,24.06,141.56,40.17,122l16.19,19.52Z"/>
+                </svg>
+              </div>
+              <h1 style="margin:10px 0 8px;font-size:31px;line-height:38px;color:#232323;font-weight:700;">Debata oraz premiera filmu dokumentalnego</h1>
+              <div style="font-size:18px;line-height:26px;color:#bf151b;font-weight:700;">z okazji 65. Międzynarodowego Kongresu Bałtyckiego</div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:4px 30px 26px;">
+              <p style="margin:0 0 18px;font-size:17px;line-height:27px;color:#232323;">${greeting},</p>
+              <p style="margin:0 0 18px;font-size:17px;line-height:27px;color:#232323;">w imieniu organizatorów 65. Międzynarodowego Kongresu Bałtyckiego mamy zaszczyt zaprosić Państwa na debatę <strong>„Sport to też kultura - dlaczego warto pamiętać o sportowym dziedzictwie?”</strong> oraz na premierę filmu dokumentalnego <strong>„Bałtycki Wist”</strong> w reżyserii Konrada Kulczyńskiego.</p>
+              <p style="margin:0 0 24px;font-size:17px;line-height:27px;color:#232323;">Spotkanie odbędzie się w ramach jubileuszowej, 65. edycji Kongresu i będzie okazją do rozmowy o znaczeniu sportowego dziedzictwa, pamięci instytucjonalnej oraz roli kultury w opowiadaniu historii brydża sportowego.</p>
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin:0 0 24px;border-collapse:separate;border-spacing:0 10px;">
+                <tr>
+                  <td style="background:#eaf6f8;border-left:6px solid #2396ad;border-radius:6px;padding:16px 18px;">
+                    <div style="font-size:13px;line-height:18px;color:#167b91;font-weight:700;text-transform:uppercase;">Debata</div>
+                    <div style="margin-top:4px;font-size:19px;line-height:27px;color:#232323;font-weight:700;">16:30 &nbsp; Sport to też kultura - dlaczego warto pamiętać o sportowym dziedzictwie?</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="background:#fff7f7;border-left:6px solid #bf151b;border-radius:6px;padding:16px 18px;">
+                    <div style="font-size:13px;line-height:18px;color:#bf151b;font-weight:700;text-transform:uppercase;">Premiera</div>
+                    <div style="margin-top:4px;font-size:19px;line-height:27px;color:#232323;font-weight:700;">17:00 &nbsp; Premiera filmu dokumentalnego „Bałtycki Wist”</div>
+                    <div style="margin-top:5px;font-size:15px;line-height:22px;color:#555555;">Reżyseria: Konrad Kulczyński</div>
+                  </td>
+                </tr>
+              </table>
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin:0 0 24px;background:#ffffff;border:1px solid #d8e4e8;border-radius:6px;">
+                <tr>
+                  <td style="padding:18px 20px;">
+                    <div style="font-size:14px;line-height:20px;color:#167b91;font-weight:700;text-transform:uppercase;">Uczestnicy debaty</div>
+                    <div style="margin-top:10px;font-size:16px;line-height:25px;color:#232323;">
+                      Karolina Babicz-Kaczmarek, dyrektor Muzeum Sopotu<br>
+                      Maja Wagner, naczelnik Wydziału Kultury UM Gdynia<br>
+                      Kazimierz Wierzbicki, prezes Trefl SA<br>
+                      Andrzej Twardowski, prezes Pomorskiego Wojewódzkiego Związku Brydża Sportowego
+                    </div>
+                  </td>
+                </tr>
+              </table>
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#fbfcfc;border:1px solid #d8e4e8;border-radius:6px;">
+                <tr>
+                  <td style="padding:18px 20px;">
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                      <tr>
+                        <td style="padding:0 0 10px;font-size:14px;line-height:20px;color:#167b91;font-weight:700;text-transform:uppercase;">Szczegóły wydarzenia</td>
+                      </tr>
+                      <tr>
+                        <td style="padding:0 0 8px;font-size:16px;line-height:24px;color:#232323;"><strong>Data:</strong> 25 lipca 2026 r., sobota</td>
+                      </tr>
+                      <tr>
+                        <td style="padding:0 0 8px;font-size:16px;line-height:24px;color:#232323;"><strong>Miejsce:</strong> Hala Stulecia Sopotu</td>
+                      </tr>
+                      <tr>
+                        <td style="padding:0;font-size:16px;line-height:24px;color:#232323;"><strong>Adres:</strong> ul. Jakuba Goyki 7, 81-715 Sopot</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <p style="margin:24px 0 0;font-size:17px;line-height:27px;color:#232323;">Z wyrazami szacunku,<br><strong>Michał Górski</strong><br>Dyrektor Międzynarodowego Kongresu Bałtyckiego w Brydżu Sportowym</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="background:#232323;padding:18px 30px;text-align:center;">
+              <div style="font-size:13px;line-height:20px;color:#ffffff;">65. Międzynarodowy Kongres Bałtycki | Sopot, 22-30 lipca 2026</div>
+              <div style="margin-top:4px;font-size:13px;line-height:20px;color:#b9d3da;"><a href="https://sopotbridge.pl/" style="color:#b9d3da;text-decoration:underline;">sopotbridge.pl</a></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`;
+}

@@ -211,7 +211,9 @@ include 'header.php';
           <span>Marek Koczerga</span>
         </div>
         <div class="sponsor sponsor--wide">
-          <img src="sponsor-zui.png" alt="ZUI Sztum Z. Koza Sp.k.">
+          <a href="https://www.zuisztum.pl/" target="_blank" rel="noopener">
+            <img src="sponsor-zui.png" alt="ZUI Sztum Z. Koza Sp.k.">
+          </a>
         </div>
       </div>
     </section>
