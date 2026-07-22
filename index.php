@@ -43,6 +43,7 @@ include 'header.php';
   <span>Największa liczba rozdań rozegrana w trakcie 48-godzinnego meczu brydżowego.</span>
   <em>Miejsce: przed wejściem na sopockie molo.</em>
   <a class="event__cta event__cta--record" href="https://world-record-registration.vercel.app/" target="_blank" rel="noopener">Zarejestruj udział w rekordzie</a>
+  <a class="event__cta event__cta--results" href="https://liwosz.jaom.pl/2026/260722/" target="_blank" rel="noopener">Zobacz aktualne wyniki</a>
 </div>
 </div>
 
