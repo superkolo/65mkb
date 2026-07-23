@@ -5,7 +5,7 @@ include 'header.php';
 
 <section class="entry-fees">
   <h2>Wpisowe (od osoby)</h2>
-  <p class="entry-fees__lead">cennik dla rejestracji online<br>płatność na miejscu +10 zł</p>
+  <p class="entry-fees__lead">cennik dla rejestracji online<br>płatność na miejscu +10 zł&#x2077</p>
 
   <h3 class="entry-fees__subtitle">Turnieje GPPP i GPPT</h3>
   <div class="entry-fees__table-wrap">
@@ -90,6 +90,7 @@ include 'header.php';
     <li>Uprawnieni do udziału w turnieju są amatorzy, tzn. gracze niezrzeszeni w PZBS lub zrzeszeni w PZBS o WK nie przekraczającym 1.5.</li>
     <li>Nagrody będą wypłacane przelewem.</li>
     <li>Zawodnicy z Rosji i Białorusi niezrzeszeni w PZBS nie zostaną dopuszczeni do gry. Pozostali zawodnicy zagraniczni płacą wpisowe jak członkowie PZBS, z tym że owi zawodnicy muszą być zarejestrowani w swoim macierzystym związku brydżowym.</li>
+	<li>nie dotyczy turniejów GP</li>
   </ol>
 </section>
 
