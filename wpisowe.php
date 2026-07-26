@@ -4,6 +4,12 @@ include 'header.php';
 ?>
 
 <section class="entry-fees">
+
+  <section class="prizes__section">
+    <h3><b><a target="_blank" href="https://forms.gle/31PSTkgstE66HyqK9">Potrzebujesz faktury? wypełnij formularz</a></b></h3>
+  </section>
+
+
   <h2>Wpisowe (od osoby)</h2>
   <p class="entry-fees__lead">cennik dla rejestracji online<br>płatność na miejscu +10 zł&#x2077</p>
 

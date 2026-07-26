@@ -7,6 +7,11 @@ include 'header.php';
   <h2>Nagrody kongresowe</h2>
 
   <section class="prizes__section">
+    <h3><b><a target="_blank" href="https://forms.gle/XHbUDAtsfqhwd1W99">Formularz wypłaty nagród</a></b></h3>
+  </section>
+
+
+  <section class="prizes__section">
     <h3>We wszystkich kongresowych turniejach par:</h3>
     <ul>
       <li>nagrody finansowe główne otrzymuje 7% oraz specjalne 3%, czyli łącznie 10% uczestników,</li>
