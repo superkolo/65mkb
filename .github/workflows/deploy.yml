@@ -101,7 +101,7 @@ jobs:
           set sftp:connect-program \"ssh -a -x -i ~/.ssh/deploy_key -o StrictHostKeyChecking=${HOST_KEY_CHECKING}\";
           open -u ${DEPLOY_USERNAME}, sftp://${DEPLOY_HOST}:${PORT};
           mirror -R ./ ${DEPLOY_TARGET_DIR} \
-            --delete \
+            --only-newer \
             --verbose \
             --exclude-glob .git \
             --exclude-glob .git/** \
@@ -139,7 +139,7 @@ jobs:
           set sftp:connect-program \"sshpass -p ${DEPLOY_PASSWORD} ssh -a -x -o StrictHostKeyChecking=${HOST_KEY_CHECKING}\";
           open -u ${DEPLOY_USERNAME}, sftp://${DEPLOY_HOST}:${PORT};
           mirror -R ./ ${DEPLOY_TARGET_DIR} \
-            --delete \
+            --only-newer \
             --verbose \
             --exclude-glob .git \
             --exclude-glob .git/** \
@@ -168,7 +168,7 @@ jobs:
           set ftp:passive-mode true;
           set ssl:verify-certificate false;
           mirror -R ./ ${DEPLOY_TARGET_DIR} \
-            --delete \
+            --only-newer \
             --verbose \
             --exclude-glob .git \
             --exclude-glob .git/** \
