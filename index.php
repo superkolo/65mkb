@@ -88,7 +88,7 @@ include 'header.php';
   <span>Reżyseria: <em>Konrad Kulczyński</em></span>
 </div>
 <div class="event ktp">17:30 <?php echo wyntc('IV KTP** o Puchar Prezesa Trefl S.A.','k4',0,'https://startowki.vuyap.com/tournament/register/4nvh/q44b5K58fQEek1jrKzPW'); ?> </div>
-<div class="event amateur">17:30 <?php echo wyntc('I Turniej Par Amatorów o Puchar wakacyjnepomysly.pl','',0,'https://startowki.vuyap.com/tournament/register/4nvh/RhmqIdWeOWzHVuifCEfr'); ?> </div>
+<div class="event amateur">17:30 <?php echo wyntc('I Turniej Par Amatorów o Puchar wakacyjnepomysly.pl','a1',0,'https://startowki.vuyap.com/tournament/register/4nvh/RhmqIdWeOWzHVuifCEfr'); ?> </div>
 </div>
 
 <div class="day" id="day3">
