@@ -12,13 +12,13 @@ include 'header.php';
 
   <div class="archive__grid">
     <a class="archive-card archive-card--featured" href="https://wyniki.pzbs.pl/2026/baltycki/">
-      <span class="archive-card__year">2025</span>
+      <span class="archive-card__year">2026</span>
       <strong>65. Międzynarodowy Kongres Bałtycki</strong>
       <span>Sopot, 22-30 li[pca 2026</span>
       <em>Otwórz archiwum wyników</em>
     </a>
 
-    <a class="archive-card archive-card--featured" href="https://wyniki.pzbs.pl/2025/baltycki/">
+    <a class="archive-card" href="https://wyniki.pzbs.pl/2025/baltycki/">
       <span class="archive-card__year">2025</span>
       <strong>64. Międzynarodowy Kongres Bałtycki</strong>
       <span>Sopot, 1-7 sierpnia 2025</span>
